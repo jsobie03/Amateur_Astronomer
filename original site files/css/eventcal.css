@@ -1,0 +1,341 @@
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+html {
+	position:relative;
+	min-height:100%;
+}
+body{
+	background-image:url(../images/spacebackground4.jpg);
+	background-repeat:repeat;
+	width:100%;
+	margin:0 0 300px; 
+	background-size:contain !important;
+	background-color:black;
+}
+
+section#eventmain {
+	background-color:transparent;
+	width:100%;
+	height:auto;
+	margin:0 auto;	
+}
+
+/****************** HEADER IMAGE STYLES **************************/
+
+#wrapperHeader {
+	width: 100%;
+	height: auto;
+	max-width: 1700px;
+}
+
+div#wrapperHeader div#header {
+	width: 100%;
+	max-width: 1700px;
+	height:auto;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+div#wrapperHeader div#header img {
+	width: 100%;
+	max-width: 1700px;
+	height:200px;
+	margin:0 1% 0.5% 0.5%;
+}
+
+div#header {
+	width: 100%;
+	max-width: 1700px;
+	height:auto;
+	padding:0;
+}
+
+/* NAV HORIZONTAL MENU BAR STYLES ----------------------------------------------------------------------------------------------------------------------------------- */
+
+nav {
+	margin-left:0px;
+	margin-right:0px;
+	width:100%;
+}
+
+ul.MenuBarHorizontal {
+	font-family:Arial, Helvetica, sans-serif;
+	margin-bottom:-2%;
+	margin-top:1.9%;
+	margin-left:10%;
+	margin-right:2%;
+	font-weight:normal;
+	font-variant:none;
+	padding: 0;
+	list-style-type:none;
+	font-size: 100%;
+	cursor: default;
+	width: auto;
+	background:transparent;
+}
+
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.htmll */
+ul.MenuBarActive
+{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+
+ul.MenuBarHorizontal li {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	font-size: 1.2em;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	width:8.45em;
+	float: left;
+	display: block;
+	color: rgb(0,0,0);
+	background-color: rgb(255,255,255);
+	border-style: solid;
+	border-radius: 20px;
+}
+
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul
+{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	font-size:0.8em;	
+	cursor: default;
+	width: 10.7em;
+	position: absolute;
+	left: -1000em;
+	z-index: 1020;
+	border-radius:20px;
+}
+
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+	left: auto;
+}
+
+ul.MenuBarHorizontal ul li
+{
+	width: 100%;
+	background-color: rgb(0,0,0);
+	border-radius:20px;
+}
+
+ul.MenuBarHorizontal ul ul
+{
+	width:100%;
+	position: absolute;
+	background-color: rgb(255,255,255);
+}
+
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	top: 0;
+	background-color: rgb(255,255,255);
+}
+
+ul.MenuBarHorizontal ul
+{
+	background-color: rgb(255,255,255);
+}
+
+ul.MenuBarHorizontal a
+{	
+	display:block;
+	cursor: pointer;
+	color:rgb(0,0,0);
+	text-decoration: none;
+	background-color:rgb(255,255,255);
+	border-radius:20px;
+	font-weight:bold;
+}
+
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+
+	background-color:rgb(0,204,255);
+	padding:0;
+	color: rgb(0,0,0);
+	font-weight:bold;
+}
+
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+
+	background-color:rgb(0,0,0);
+	padding:0;
+	color: rgb(255,255,255);
+	font-weight:bold;
+}
+
+ul.MenuBarHorizontal ul ul
+{
+	position: absolute;
+	margin: -5% 0 0 95%;
+	background-color: black;
+}
+
+ul.MenuBarItemSubmenu li
+{
+	border:1px solid aqua;
+	border-radius:20px;	
+}
+
+/* FOOTER STYLES ----------------------------------------------------------------------------------------------------------------------------------- */
+
+footer {
+	position: absolute;
+    left: 0;
+	right: 0;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+	background-color:rgba(0,0,0,0.8);
+	border:2px outset rgb(0,153,204);
+	border-radius:15px;
+	color:rgb(0,153,204);	
+ }
+
+p.return {
+	text-align:center;	
+	vertical-align:bottom;
+	color:aqua;	
+	font-size:22px;
+	font-family: Rockwell;
+	text-decoration:none;
+	margin:15px auto;
+	background-color:black;
+	width:225px;
+	border:2px solid rgb(0,153,204);
+	border-radius:20px;
+
+}
+
+p.return a {
+	color:white;
+	background-color:black;
+	width:auto;
+}	
+
+.contact .fa:before {
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.contact li#mailing {
+  display:inline-block;
+  list-style-type: none;
+  margin-top:10px;
+  margin-left:480px;
+  margin-right:480px;
+  text-align: center;
+}
+
+.contact li#phone {
+  display: inline-block;
+  list-style-type: none;
+  margin-top:10px;
+  margin-left:15px;
+  text-align: center;
+}
+
+.contact li#emailme {
+  display: inline-block;
+  list-style-type: none;
+  margin-top:10px;
+  margin-right:10px;
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.cont {
+  text-align: center;
+}
+
+
+/******** Calendar **************/
+div.title {
+	font: 60px Rockwell;
+	text-align: center;
+	height: 100px;
+	background-color: black;
+	color: white;
+	width:550px;
+	border-radius:20px;
+	border:1px solid white;
+	margin:0 auto;
+}
+
+/* Styling for the overall table */
+
+table {
+	font: 100% Rockwell;
+	table-layout: fixed;
+	width: 90%;
+	color:white;
+	background-color:rgba(0,0,0,0.8);
+	margin:0 auto
+}
+
+
+/* Styling for the column headers (days of the week) */
+
+th {
+	padding: 0 0.5em;
+	text-align: center;
+	background-color: gray;
+	color: white;
+}
+
+/* Styling for the individual cells (days) */
+
+td {
+	font-size: medium;
+	padding: 0.25em 0.25em;
+	width: 14%;
+	height: 100px;
+	text-align: left;
+	vertical-align: top;
+}
+
+tr.daybox {
+	width:14%;
+	height:150px;
+}
+
+/* Styling for the date numbers */
+
+.date {
+	font-size: x-large;
+	padding: 0.25em 0.25em;
+	text-align: left;
+	height:100px;
+	vertical-align: top;
+}
+
+/* Class for individual days (coming in future release) */
+
+.sun {
+	color: red;
+}
+
+/* Hide the month element (coming in future release) */
+
+th.month {
+	visibility: hidden;
+	display: none;
+}

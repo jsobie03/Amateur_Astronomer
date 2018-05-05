@@ -1,0 +1,1 @@
+$('#classModal').modal('show')

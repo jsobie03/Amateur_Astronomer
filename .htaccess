@@ -1,0 +1,12 @@
+# Use PHP7 as default
+AddHandler application/x-httpd-php70 .php
+
+<IfModule dir_module>
+    DirectoryIndex index.php 
+	DirectoryIndex index.html
+	DirectoryIndex index.htm
+    DirectoryIndex index.cgi
+    DirectoryIndex default.htm
+    DirectoryIndex default.html
+</IfModule>
+     

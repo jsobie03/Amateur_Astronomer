@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	      PROJECT: WEB 121A FINAL PROJECT ASSIGNMENT
+         SITENAME: The Amateur Astronomer
+	DOCUMENT NAME: Sun & Moons (.html)
+           AUTHOR: Jonathan Sobier
+  START to FINISH: (4-2-2017) to (5-4-2017)
+     
+  SITE FILES USED:
+              CSS: amateurastronomer.css, main.css, bootstrap.min.css, tests.css, solarsystem.css, eventcal.css
+               JS: jquery.min.js, bootstrap.min.js, menu.js, planetmodal.js, tests.js, resetbtn.js, prefixfree.min.js, scripts.min.js
+             HTML: amastrohome.html, planets.html, dwarf.html, sunmoon.html, tests.html, events.html, 3dorbit.html,
+                   links.html
+-->
+
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>The Amateur Astronomer | Moons & Stars</title>
+<meta charset="UTF-8">
+	<meta name="keywords" 
+       content="The Amateur Astronomer, space, solar system, planets, Earth, Jupiter, Mars, Saturn, 
+            	Pluto, Uranus, Mercury, Venus, Sun, Ceres, Neptune, comets, asteroids, meteors, 
+            	meteorites, milky way, moons, satellites, space travel, universe, nebulae, SpaceX, 
+            	exploration, dwarf planets, Luna, comet tail, stars"/>
+
+	<meta name="description" 
+   	   content="The Amateur Astronomer is a place for anyone interested in astronomy to come and 
+   				learn all they wish! All are welcome and site is updated ofted!"/>
+<meta name='viewport' content='width=device-width' initial-scale="1.0"/>
+<link href="css/styles.css" rel="stylesheet" type="text/css"/>
+<link href="https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css" rel="stylesheet" type="text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script language="JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/menu.js" type="text/javascript"></script>
+
+<style>
+th,td,thead,tbody,h4 {
+	font-style:normal;
+}
+
+html {
+	position: relative;
+	min-height:100%;	
+}
+
+body {
+	width:100%;
+	margin:0 0 130px;	
+}
+img#constellations{display:block;margin-right:auto;margin-left:auto; width:600px; height:600px;}
+  h1{color:white;text-align:center;font-size: 40px;font-family:Book Antiqua;margin:1px;}
+  h2{color:white;text-align:center;font-size: 13px;margin:1px;}
+  
+  div.desc {
+	width:316px;
+	height:45px;
+    text-align: center;
+	color:rgb(0,0,0);
+	font-style:normal;
+	font-size:18px;
+	border-radius:15px;
+	margin-left:0px;
+	margin-right:0px;
+	background-color:rgba(0,153,255,1);
+}
+
+</style>
+
+</head>
+
+<body>
+<a name="top"></a>
+<div id="wrapperHeader">
+<div id="header">
+<img src="images/amateur.png" alt="homepage header image"/>
+</div>
+<nav>
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a class="MenuBarItemSubmenu" href="index.html">Home</a></li>    
+    <li><a class="MenuBarItemSubmenu" href="planets.html">The Planets</a></li>
+    <li><a class="MenuBarItemSubmenu" href="dwarf.html">Dwarf Planets</a></li>
+    <li><a class="MenuBarItemSubment" href="sunmoon.html">Moons & Stars</a></li>
+    <li><a class="MenuBarItemSubmenu" href="tests.html">Space Quiz</a></li>
+    <li><a class="MenuBarItemSubmenu" href="events.html">Astro Events</a></li>
+	<li><a class="MenuBarItemSubmenu" href="newdisc.html">New Discoveries</a></li>
+    <li><a class="MenuBarItemSubmenu" href="3dorbit.html" target="_blank">3D Planets</a></li>
+    <li><a class="MenuBarItemSubmenu" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</div>
+
+<section id="full2" style="background-color:transparent">
+<img src="images/sunandmoonheader.png" id="sunmoonbanner" alt="page header image for the moon and stars page"/>
+</section>
+
+
+<section id="aboutus" style="background-color:transparent;width:700px">
+<p class="indent" style="background-color:rgba(0,0,0,0.9);border:4px outset white; border-radius:15px;font-style:normal;color:rgb(255,255,255);width:750px">
+        	Since 6 of the 8 planets and most of the Dwarf planets have at least one moon that orbits around them, it is normal to ask what
+            benefits a moon brings to the table for a planet! Take the time to watch both of the videos below. After watching, you will have
+            a more complete idea about the importance of "Luna" to life here on Earth! Once done with the videos, please look through the images and information 
+            about select moons in our solar system. There is no way they would all get listed since there are a total of 181 moons orbiting the planets and dwarf planets
+            that we currently know about.
+         </p>
+         <iframe width="750" height="422" src="https://www.youtube.com/embed/Gh5vSBQD8Cs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+         <br>
+         <br>
+         <iframe width="750" height="422" src="https://www.youtube.com/embed/4E-m3Jv_l2U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</section>
+<section id="hometop" style="height:auto">
+<h1 style="color:rgb(0,255,255)">A Guide to the Constellations</h1>
+  <h2> <i>Click on the constellation name<i> </h2>
+  <img src= "http://i.infopls.com/images/zodiac2.jpg" alt="Constellations" id="constellations" usemap= "#constellationmap">
+    <map name="constellationmap">
+    <area shape="circle" coords="235,235,10" href="https://en.wikipedia.org/wiki/Sun" target="_blank" alt="Sun">
+      <area shape="rect" coords="282,34,365,57" href="https://en.wikipedia.org/wiki/Sagittarius_(constellation)" target="_blank" alt="Sagittarius">             
+      <area shape="rect" coords="411,65,489,87" href="https://en.wikipedia.org/wiki/Scorpius" target="_blank" alt="Scorpio">
+      <area shape="rect" coords="502,167,561,192" href="https://en.wikipedia.org/wiki/Libra_(constellation)" target="_blank" alt="Libra">
+      <area shape="rect" coords="523,317,576,341" href="https://en.wikipedia.org/wiki/Virgo_(constellation)" target="_blank" alt="Virgo">
+      <area shape="rect" coords="493,416,534,442" href="https://en.wikipedia.org/wiki/Leo_(constellation)" target="_blank" alt="Leo">
+      <area shape="rect" coords="419,507,486,533" href="https://en.wikipedia.org/wiki/Cancer_(constellation)" target="_blank" alt="Cancer">
+      <area shape="rect" coords="239,537,304,562" href="https://en.wikipedia.org/wiki/Gemini_(constellation)" target="_blank" alt="Gemini">
+      <area shape="rect" coords="125,499,182,521" href="https://en.wikipedia.org/wiki/Taurus_(constellation)" target="_blank" alt="Taurus">
+      <area shape="rect" coords="50,412,103,437" href="https://en.wikipedia.org/wiki/Aries_(constellation)" target="_blank" alt="Aries">
+      <area shape="rect" coords="15,275,74,303" href="https://en.wikipedia.org/wiki/Pisces_(constellation)" target="_blank" alt="Pisces">
+      <area shape="rect" coords="29,127,107,153" href="https://en.wikipedia.org/wiki/Aquarius_(constellation)" target="_blank" alt="Aquarius">
+      <area shape="rect" coords="97,68,173,86" href="https://en.wikipedia.org/wiki/Capricornus" target="_blank" alt="Capricorn">
+      <area shape="rect" coords="281,279,320,321" href="https://en.wikipedia.org/wiki/Sun" target="_blank" alt="sun_hotspot">
+    </map>
+    <p class="indent" style="background-color:rgba(0,0,0,0.9);border:4px outset white; border-radius:15px;color:rgb(255,255,255);font-style:normal;width:700px; margin:10px 10px 10px 40px">
+        	Constellations are a very interesting part of Astronomy that actually provides many of the roots for the other "Astro" science! Of course
+            by other "Astro" science, I mean Astrology! Take time to study the Constellations map seen above and remember to click on each constellation
+            or planet and be transported instantly to the Wikipedia page that will explain much more about each of the items that are shown on 
+            this really useful map! The stars are more than just balls of combustable gasses and radiation, they were, and still are, some of the most
+            important and central objects for many civilizations, past, present, and most certainly the future that we have found in the Universe! 
+            Did you know that most of the stars that you see in the night sky have already died? I know that sounds confusing since we still see them twinkling and burning at night! 
+            Bear in mind how far away the majority of those stars are from us on Earth! The time it takes for the light from the final days of these star to reach us on Earth
+            is so long that when we finally do see it here on Earth, the star has probably been dead for quite some time!!! Pretty cool, huh?
+</p>
+</section>
+<div class="clearfix"></div>
+<section id="full2" style="margin-top:50px">
+<section id="partfull2">
+
+<!-- SUN CONTROLS ARE IN planetmodal.js AS myBtn and myModal -->
+<!-- BEGIN THE SUN -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+      <button type="button" id="myBtn" style="background:transparent"><img src="images/Planets/sun.png" alt="image of the star at the middle of our solar system the sun"/></button>
+      <div class="desc" id="planets">THE SUN</div>
+      
+      <!-- THE MODAL -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+<!-- Modal content-->
+<div class="modal-content" id="planets">
+	<div class="modal-header" id="planets">
+    	<button type="button" class="close" data-dismiss="modal">&times;</button>
+        	<h4 class="modal-title" id="planets">THE SUN</h4>
+    </div>
+	
+	<div class="modal-body" id="planets">           		
+		<img src="images/Planets/sun2.png" id="modal" alt="sun red hot"/>
+	<table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+                <thead id="planets">
+                    <tr id="planets">
+                      <th scope="row" id="planets" style="text-align:center">Age</th>
+                      <th scope="row" id="planets" style="text-align:center">Type</th>    
+                    </tr>
+                </thead>
+                <tbody id="planets">
+                    <tr id="planets">
+                      <td id="planets">4.6 Billion Years Old</td>
+                      <td id="planets">Yellow Dwarf (G2V) Star</td>
+                    </tr>
+                </tbody>
+</tr>
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Mass&nbsp;(10<span class="xnth">&#50;&#49;</span>&nbsp;tons)</span></th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter&nbsp;(mi.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">2,192,000 &times; 10<span class="xnth">&#50;&#49;</span>&nbsp;tons</td>
+                    <td id="planets">865,000 mi.</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Density &nbsp;(lbs/ft&sup3;)</th>
+                    <th scope="row" id="planets" style="text-align:center">Gravity &nbsp;(ft/s&sup2;)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">88 lbs/ft&sup3;</td>
+                    <td id="planets">898.9 ft/s&sup2;</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Escape Velocity &nbsp;(MPS)</th>
+                    <th scope="row" id="planets" style="text-align:center">Rotation Period &nbsp;(hrs.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">383.8 MPS</td>
+                    <td id="planets">609.1 hrs.</td>
+                  </tr>
+                </tbody>
+                
+                <!--Modal Table Row 4 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Length of Day &nbsp;(hrs.)</th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Dist. from Sun &nbsp;(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">N/A</td>
+                    <td id="planets">N/A</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 5 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Perihelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Aphelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">N/A</td>
+                    <td id="planets">N/A</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 6 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period &nbsp;(days)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Velocity&nbsp;(MPS)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">N/A</td>
+                    <td id="planets">N/A</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 7 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Inclination(degrees)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Eccentricity</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">N/A</td>
+                    <td id="planets">N/A</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 8 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Axial Tilt &nbsp;(deg.)</th>
+                    <th scope="row" id="planets" style="text-align:center">Mean Temperature &nbsp;(&deg;F)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">7.3 deg.</td>
+                    <td id="planets">9,941&deg;F</td>
+                  </tr>
+               </tbody>   
+                  <!-- Modal Table Row 9 -->
+                  
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Surface Pressure &nbsp;(Atm)</th>
+                    <th scope="row" id="planets" style="text-align:center">Number of Moons</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">N/A</td>
+                    <td id="planets">0 moons | Many Satellites </td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 10 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Ring System?</th>
+                    <th scope="row" id="planets" style="text-align:center">Global Magnetic Field?</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">NO</td>
+                    <td id="planets">Yes. It is unknown where the sun creates its magnetic
+                    field, but it most definitely has one. It is actually known
+                    to be a "gigantic magnetic star" to some people!</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End of Modal Table --> 
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF THE SUN -->
+
+<!-- MOON CONTROLS ARE IN planetmodal.js AS myBtn12 and myModal12 -->
+
+<!-- MOON -->
+
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn12" style="background:transparent"><img src="images/Planets/Moons/moon-transparent.png" alt="image of the moon with no background so it is useful on any background"/></button>
+      <div class="desc" id="planets">LUNA<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Earth</sup></div>
+      
+      <!-- THE MODAL -->
+      
+     <div id="myModal12" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">LUNA</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/5545815091_a64328ee4b_b.jpg" id="modal" alt="The moon is beautiful in this image, lit by the sun very brightly!"/> 
+	
+<table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">?</td>
+                    <td id="planets">?</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Earth</td>
+                    <td id="planets">2160 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">238,855 miles</td>
+                    <td id="planets">27.322 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body -->
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+
+<!-- END OF MOON(LUNA) -->
+
+<!-- IN planetmodal.js THE FOLLOWING MOONS ARE CONTROLLED BY [myBtn17-myBtn19] [myModal17-myModal19]-->  
+	<!-- BEGIN EUROPA -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn17" style="background:transparent"><img src="images/Planets/Moons/europajupiter.jpg" alt"Europa a moon of Jupiter"/></button>
+      <div class="desc" id="planets">EUROPA<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Jupiter</sup></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal17" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">EUROPA</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/europajupiter.jpg" alt""/> 
+	
+    <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1610</td>
+                    <td id="planets">Galileo</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Jupiter</td>
+                    <td id="planets">1942.41 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">416,877.93 miles</td>
+                    <td id="planets">3.551 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF EUROPA-->
+
+<!-- BEGIN IO -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn18" style="background:transparent"><img src="images/Planets/Moons/iojupiter.jpg" alt"IO a moon of Jupiter"/></button>
+      <div class="desc" id="planets">IO<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Jupiter</sup></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal18" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">IO</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/iojupiter.jpg" alt""/> 
+	
+        <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1610</td>
+                    <td id="planets">Galileo</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Jupiter</td>
+                    <td id="planets">2254.96 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">261,970.10 miles</td>
+                    <td id="planets">1.769 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF IO-->
+</section>
+<div class="clearfix"></div>
+
+<section id="partfull2">
+
+<!-- BEGIN TITAN -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn19" style="background:transparent"><img src="images/Planets/Moons/titansaturn.jpg" alt"Titan a moon of Saturn"/></button>
+      <div class="desc" id="planets">TITAN<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Saturn</sup></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal19" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">TITAN</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/titansaturn.jpg" alt""/> 
+	
+    <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1655</td>
+                    <td id="planets">C. Huygens</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Saturn</td>
+                    <td id="planets">3200 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">759,222 miles</td>
+                    <td id="planets">15.945 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF TITAN-->
+
+
+
+<!-- BEGIN HYPERION -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn1a" style="background:transparent"><img src="images/Planets/Moons/hyperionsaturn.jpg" alt"Hyperion a moon of Saturn"/></button>
+      <div class="desc" id="planets">HYPERION<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Saturn</sup></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal1a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">HYPERION</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/hyperionsaturn.jpg" alt""/> 
+	
+   <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1848</td>
+                    <td id="planets">W. Bond</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Saturn</td>
+                    <td id="planets">224x140 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">920,251 miles</td>
+                    <td id="planets">21.277 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- END HYPERION -->
+</section>
+
+<!-- BEGIN IAPETUS -->
+  <div class="responsive"  id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn2a" style="background:transparent"><img src="images/Planets/Moons/iapetussaturn.jpg" alt"Iapetus a moon of saturn"/></button>
+      <div class="desc" id="planets">IAPETUS<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Saturn</sup></div>
+      
+      <!-- THE MODAL -->
+      
+<div id="myModal2a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">IAPETUS</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/iapetussaturn.jpg" alt""/> 
+	
+   <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1671</td>
+                    <td id="planets">G. Cassini</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Saturn</td>
+                    <td id="planets">892 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">2,212,889 miles</td>
+                    <td id="planets">79.3215 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END IAPETUS -->
+
+<!-- BEGIN MIMAS -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn3a" style="background:transparent"><img src="images/Planets/Moons/mimassaturn.jpg" alt"Mimas a moon of Saturn"/></button>
+      <div class="desc" id="planets">MIMAS<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Saturn</sup></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal3a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">MIMAS</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/mimassaturn.jpg" alt""/> 
+	
+   <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1789</td>
+                    <td id="planets">W. Herschel</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Saturn</td>
+                    <td id="planets">247 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">115,274 miles</td>
+                    <td id="planets">0.942 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF MIMAS-->
+</section>
+</section>
+<div class="clearfix"></div>
+
+<section id="full2">
+<section id="partfull2">
+
+<!-- BEGIN LARISSA -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn4a" style="background:transparent"><img src="images/Planets/Moons/larissaneptune.jpg" alt"Larissa a moon of Neptune"/></button>
+      <div class="desc" id="planets">LARISSA<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Neptune</sup></div></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal4a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">LARISSA</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img id="modal" src="images/Planets/Moons/larissaneptune.jpg" alt"Larissa" style="border-radius:20px"/> 
+	
+    <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1989</td>
+                    <td id="planets">Voyager 2</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Neptune</td>
+                    <td id="planets">124 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">45,733 miles</td>
+                    <td id="planets">0.56 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF LARISSA -->
+
+<!-- BEGIN  TRITON-->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn5a" style="background:transparent"><img src="images/Planets/Moons/tritonneptune.jpg" alt"Triton a moon of Neptune"/></button>
+      <div class="desc" id="planets">TRITON<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Neptune</sup></div></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal5a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">TRITON</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/tritonneptune.jpg" alt"Triton" id="modal"/> 
+	
+    <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1846</td>
+                    <td id="planets">W. Lassel</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Neptune</td>
+                    <td id="planets">1681 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">220,463 miles</td>
+                    <td id="planets">5.877 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF TRITON -->
+
+<!-- BEGIN  PROTEUS-->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn6a" style="background:transparent"><img src="images/Planets/Moons/proteusneptune.jpg" alt"Proteus a moon of Neptune"/></button>
+      <div class="desc" id="planets">PROTEUS<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Neptune</sup></div></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal6a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">PROTEUS</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/proteusneptune.jpg" id="modal" alt"Proteus"/> 
+<table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1989</td>
+                    <td id="planets">Voyager 2</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Neptune</td>
+                    <td id="planets">261 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">73,073 miles</td>
+                    <td id="planets">1.12 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF PROTEUS -->
+
+<!-- BEGIN  THALASSA-->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn7a" style="background:transparent"><img src="images/Planets/Moons/thalassaneptune.jpg" alt"Thalassa a moon of Neptune"/></button>
+      <div class="desc" id="planets">THALASSA<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Neptune</sup></div></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal7a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">THALASSA</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/thalassaneptune.jpg" id="modal" alt"Thalassa"/> 
+	
+    <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1989</td>
+                    <td id="planets">Voyager 2</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Neptune</td>
+                    <td id="planets">56 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">31,069 miles</td>
+                    <td id="planets">0.31 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF THALASSA -->
+</section>
+<div class="clearfix"></div>
+
+<section id="partfull2">
+
+<!-- BEGIN PHOBOS -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn8a" style="background:transparent"><img src="images/Planets/Moons/phobosmars.jpg" alt"Mars moon Phobos"/></button>
+      <div class="desc" id="planets">PHOBOS<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Mars</sup></div></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal8a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">PHOBOS</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/phobosmars.jpg" id="modal" alt"Mars moon Phobos"/> 
+	
+   <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1877</td>
+                    <td id="planets">A. Hall</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Mars</td>
+                    <td id="planets">17 miles x 12 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">5760 miles</td>
+                    <td id="planets">0.319 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body -->  
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF PHOBOS -->
+
+<!-- BEGIN DEIMOS -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn9a" style="background:transparent"><img src="images/Planets/Moons/deimosmars.jpg" alt"MARS MOON DEIMOS"/></button>
+      <div class="desc" id="planets">DEIMOS<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Mars</sup></div></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal9a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">DEIMOS</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/deimosmars.jpg" id="modal" alt"Mars moon Deimos"/> 
+	
+   <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1877</td>
+                    <td id="planets">A. Hall</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Mars</td>
+                    <td id="planets">5 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">16,442 miles</td>
+                    <td id="planets">1.263 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body -->  
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- END DEIMOS -->
+
+
+<!-- BEGIN  CHARON -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn10a" style="background:transparent"><img src="images/Planets/Moons/charonpluto.png" alt"Plutos moon Charon"/></button>
+      <div class="desc" id="planets">CHARON<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Pluto</sup></div></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal10a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">CHARON</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/charonpluto.png" id="modal" alt"Charon"/> 
+	
+    <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1978</td>
+                    <td id="planets">J. Christy</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Pluto</td>
+                    <td id="planets">750 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">12,161 miles</td>
+                    <td id="planets">6.387 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF CHARON -->
+
+<!-- BEGIN  NIX-->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+<button type="button" id="myBtn11a" style="background:transparent"><img src="images/Planets/Moons/nixpluto.jpg" alt"Nix"/></button>
+      <div class="desc" id="planets">NIX<br><sup style="color:rgb(255,255,255);background-color:black;font-weight:bold">Pluto</sup></div>
+      
+      <!-- THE MODAL -->
+      
+      <div id="myModal11a" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="planets">NIX</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            
+            <img src="images/Planets/Moons/nixpluto.jpg" id="modal" alt"Plutos moon Nix"/> 
+	
+    <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+
+<!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                   <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Year Discovered:&nbsp;</th>
+                    <th scope="row" id="planets" style="text-align:center">Discovered By:&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">2005</td>
+                    <td id="planets">Weaver & Stern</td>
+                  </tr>
+                </tbody>
+                
+<!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Planet it Orbits</th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter (miles)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">Pluto</td>
+                    <td id="planets">27-81 miles</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 3 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Distance from its Planet (miles)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period (days)</th>
+                  </tr>
+                </thead>
+                 <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">30,245 miles</td>
+                    <td id="planets">24.856 days</td>
+                  </tr>
+                </tbody>
+                
+               </table> 
+                
+              
+            </div>
+            
+            <!-- End of Modal Body --> 
+         	   
+            <!-- Modal Footer Begin -->
+            <div class="modal-footer" id="planets"> <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF NIX -->
+<script src="js/planetmodal.js" type="text/javascript"></script>
+</section>
+<div class="clearfix"></div>
+</section>
+
+
+<p class="return"><a href="#top" style="font-style:normal">Back To The Top</a></p>
+<footer>
+
+<div class="cont">
+
+  <ul class="contact">
+  
+  <li id="phone" style="text-align:left; color:white">
+      <p><i style="color:rgb(0,153,204)" class="fa fa-phone fa-3x"></i></p>
+      <p style="color:rgb(0,153,204)"><strong style="color:white">Phone:</strong></br>(949)690-1553</p>
+    </li> 
+    
+  <li id="mailing" style="text-align:left; color:white; margin-top:2px">
+      <p style="color:rgb(0,153,204)"><strong style="color:white; font-size:28px">The Amateur Astronomer</strong><br/>
+	  	<strong>Last Updated:<br/>
+		</strong><!-- #BeginDate format:Am1a -->May 25, 2017 2:12 PM<!-- #EndDate --></p>
+	</li>
+
+    <li id="emailme" style="text-align:left; color:white">
+      <p><i style="color:rgb(0,153,204)" class="fa fa-envelope fa-3x"></i></p>
+      <p><strong>E-mail:</strong></br><a style="color:rgb(0,153,204)" href="mailto:jsobie03@baker.edu">jsobie03@baker.edu</a></p>
+    </li>
+
+  </ul>
+</div>
+
+</footer>
+</body>
+</html>

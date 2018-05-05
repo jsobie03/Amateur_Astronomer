@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- 
+	      PROJECT: WEB 121A FINAL PROJECT ASSIGNMENT
+         SITENAME: The Amateur Astronomer
+	DOCUMENT NAME: Homepage (.html)
+           AUTHOR: Jonathan Sobier
+  START to FINISH: (4-2-2017) to (5-4-2017)
+     
+  SITE FILES USED:
+              CSS: styles.css, main.css, bootstrap.min.css, tests.css, solarsystem.css, eventcal.css, form_clear.css, font-awesome.min.css
+               JS: jquery.min.js, bootstrap.min.js, menu.js, planetmodal.js, tests.js, resetbtn.js, prefixfree.min.js, scripts.min.js
+             HTML: index.html, planets.html, dwarf.html, sunmoon.html, tests.html, events.html, 3dorbit.html,
+                   links.html
+-->
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>The Amateur Astronomer Hompage</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/styles.css" rel="stylesheet" type="text/css"/>
+<link href="Styles/form_clear.css" rel="stylesheet" type="text/css"/>
+<link href="https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css" rel="stylesheet" type="text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/menu.js" type="text/javascript"></script>
+
+<style type="text/css">
+html {
+min-height: 100%;
+	position: relative;
+}
+</style>
+</head>
+
+<body>
+<a name="top"></a>
+<div id="wrapperHeader">
+<div id="header">
+<img src="images/amateur.png" alt="homepage header image"/>
+</div>
+
+<nav>
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a class="MenuBarItemSubmenu" href="index.html">Home</a></li>    
+    <li><a class="MenuBarItemSubmenu" href="planets.html">The Planets</a></li>
+    <li><a class="MenuBarItemSubmenu" href="dwarf.html">Dwarf Planets</a></li>
+    <li><a class="MenuBarItemSubment" href="sunmoon.html">Moons & Stars</a></li>
+    <li><a class="MenuBarItemSubmenu" href="tests.html">Space Quiz</a></li>
+    <li><a class="MenuBarItemSubmenu" href="events.html">Astro Events</a></li>
+	<li><a class="MenuBarItemSubmenu" href="newdisc.html">New Discoveries</a></li>
+    <li><a class="MenuBarItemSubmenu" href="3dorbit.html" target="_blank">3D Planets</a></li>
+    <li><a class="MenuBarItemSubmenu" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</div>
+
+<section class="full">
+
+<section id="hometop">  
+		<img src="images/homepagewelcome.png" alt="" id="welcmhomepg"/>
+        <br>
+<p id="main">
+	Did you ever wonder what the Earth would look like if you were in a ship flying from the outer planets of our solar system towards Earth? It is truly a magical and beautiful sight to see. Here below is an video that shows what that looks like thanks to some great animation and even imagination!
+</p>
+<video controls class="media-right" autoplay>
+	<source src="videos/earth_from_space.mp4" type="video/mp4"> 
+</video> 
+<br/>
+<p id="main">
+	This video provides an awesome perspective of our planet and how insignificant it is when you look at how endless space really is! Our planet is still extremely important to us, the human race, since another planet like Earth may not exist. If one does exist, it would take technology beyond what humans have discovered to be able to travel to a new planet since the distance is far beyond what we could survive. Protect our planet and all of the beauty that she holds.
+</p>
+</section>
+
+<section id="aboutus" style="background-color:black">
+ <img src="images/aboutus.png" alt="" id="abtsitebanner"/><br/>
+
+ <img src="images/aboutuside2.jpeg" alt="Moon rising over Earth half two" id="leftbord"/>  
+
+<section id="paragraph">
+<h3>You Found Us! <br>
+Allow Us Tell You What We Do...</h3>
+		<p id="main">
+			There are all sorts of fun things in the pages within this site that can 
+            help anyone fully understand all there is to learn about space and, in particular, 
+            our solar system and all of its planets! You may be a beginner, knowing nothing about the universe, 
+            solar system, planets, and many other topics. 
+            That's okay! We are here for your use in order to educate yourself!
+		</p>
+            <h3>Ready to Get Started?</h3>
+ 			
+            <p id="main">There is a  lot to cover, so lets get started!
+            A good place to start is the <a style="color:aqua" href="tests.html" target="_blank">Space Quiz</a> link in the navigation menu at the top of this page. That quiz will test your knowledge on astronomy and space and maybe even motivate you towards the information you want to focus on while on our site! If we do not have the information you need, then there are many very good sites that we have provided links for on our <a style="color:aqua" href="links.html" target="_blank">Links</a> page.</p>
+            
+     <h3>So Please, Enjoy!!</h3>
+            
+     <p id="main">This site was created for the sole purpose of helping anyone who is interested in Astronomy or anyone who just enjoys looking up at the sky. It is designed to teach, entertain, inform, and guide anyone who visits it. In other words, nobody is unwelcome at The Amateur Astronomer. If you are interested and want to know more, then you are welcome. If you already know a lot and want to see what we know, you are more than welcome. If you are not interested and know nothing, you may be on the wrong site, but nevertheless, you are still very welcome! </p>
+</section>	
+	<img src="images/aboutuside1.jpeg" alt="Moon rising over Earth half one" id="rightbord"/><br>
+
+</section>
+<section id="shuttle">
+
+<img src="http://www.plo8poker.com/second/wp-content/uploads/2011/07/space-shuttle-atlantis-launch-0514-2.jpg" alt="launching of one of the space shuttles during the final years of the program" id="launch"/>
+<p class="return" style="margin-top:5px; margin-bottom:25px"><a href="#top">Back To The Top</a></p>
+
+</section>
+
+<section id="formenclose" style="height:auto; margin-bottom:150px">
+<form action="formsend.php" method="get" class="clear">
+  <ol>
+    <li>
+      <fieldset>
+        <legend>Use the form below to ask a question!!</legend>
+        <ol style="margin:0 auto; padding:0 0 0 20%">
+          <li style="margin-top:10px">
+            <label for="textfield1">First Name</label>
+            <input type="text" id="textfield1" name="textfield1" value="" />
+          </li>
+          <li>
+            <label for="textfield2">Last Name</label>
+            <input type="text" id="textfield2" name="textfield2" value="" />
+          </li>
+          <li>
+            <label for="textfield3">Email:</label>
+            <input type="text" id="textfield3" name="textfield3" value="" />
+          </li>
+     
+          <div>
+        
+            <label for="receivemail">Send me mail!</label>
+            
+              <label>
+                <input type="checkbox" name="receivemail" value="affirmative" />
+              </label>
+          </div><br>
+     
+          <li>
+            <label for="subject">Subject of Question</label>
+            <select id="subject" style="width:180px" name="subject">
+              <option value="null">Select</option>
+              <option value="planets">Planets</option>
+              <option value="dwarfs">Dwarf Planets</option>
+              <option value="moons">Moons</option>
+              <option value="stars">Stars</option>
+              <option value="solarsystem">Our Solar System</option>
+              <option value="universe">The Universe</option>
+              <option value="bigbang">&quot;Big Bang&quot; Theory</option>
+              <option value="spacetravel">Space Travel</option>
+              <option value="generalquestion">General Astronomy</option>
+              <option value="other">Other</option>
+            </select>
+          </li>
+          <br>
+          <li>
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question"></textarea>
+          </li>
+          <br>
+          <ol>
+          <li>
+            <label for="referal">How did you find us?</label><br>
+            <div style="color:rgb(0,204,255)">
+              <label>
+                <input type="radio" name="referal" value="search" />
+                Search Engine</label>
+              <label>
+                <input type="radio" name="referal" value="friends" />
+                Friends</label>
+              <label>
+                <input type="radio" name="referal" value="teacher" />
+                Teacher</label>
+              <label>
+                <input type="radio" name="referal" value="family" />
+                Family</label>
+              <label>
+                <input type="radio" name="referal" value="advert" />
+                Advertisement</label>
+              <label>
+                <input type="radio" name="referal" value="other" />
+                Other</label>
+            </div>
+          </li>
+        </ol>
+      </ol>
+      </fieldset>
+    </li>
+  </ol>
+  <p style="text-align:left;">
+  <input type="submit" value="Submit" onClick="window.open('thankyou.html')"/>
+  <input type="reset" value="Reset" />  
+  </p>
+
+</form>
+<div class="clearfix"></div>
+</section>
+</section>
+
+<footer>
+
+<div class="cont">
+
+  <ul class="contact">
+  
+  <li id="phone" style="text-align:left; color:white">
+      <p><i style="color:rgb(0,153,204)" class="fa fa-phone fa-3x"></i></p>
+      <p style="color:rgb(0,153,204)"><strong style="color:white">Phone:</strong></br>(949)690-1553</p>
+    </li> 
+    
+  <li id="mailing" style="text-align:left; color:white; margin-top:2px">
+      <p style="color:rgb(0,153,204)"><strong style="color:white; font-size:28px">The Amateur Astronomer</strong><br/>
+	  	<strong>Last Updated:<br/>
+		</strong><!-- #BeginDate format:Am1a -->May 25, 2017 2:10 PM<!-- #EndDate --></p>
+	</li>
+
+    <li id="emailme" style="text-align:left; color:white">
+      <p><i style="color:rgb(0,153,204)" class="fa fa-envelope fa-3x"></i></p>
+      <p><strong>E-mail:</strong></br><a style="color:rgb(0,153,204)" href="mailto:jsobie03@baker.edu">jsobie03@baker.edu</a></p>
+    </li>
+
+  </ul>
+</div>
+
+</footer>
+</body>
+</html>

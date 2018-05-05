@@ -1,0 +1,2005 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+html {
+	position:relative;
+	min-height:100%;
+}
+body{
+	background-image:url(../images/spacebackground4.jpg);
+	background-repeat:repeat;
+	background-position:center;
+	width:100%;
+	margin:0 0 150px;
+	background-size:contain !important;
+	background-color:black;
+}
+/****************** HEADER IMAGE STYLES **************************/
+
+#wrapperHeader {
+	width: 100%;
+	height: auto;
+	max-width: 1600px;
+}
+
+div#wrapperHeader div#header {
+	width: 100%;
+	max-width: 1600px;
+	height:auto;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+div#wrapperHeader div#header img {
+	width: auto;
+	max-width: 1600px;
+	height:auto;
+	margin:0 15% 0.5% 15%
+}
+
+div#header {
+	width: 100%;
+	max-width: 1600px;
+	height:auto;
+	padding:0;
+}
+
+/* NAV HORIZONTAL MENU BAR STYLES ----------------------------------------------------------------------------------------------------------------------------------- */
+
+nav {
+	margin-left:0px;
+	margin-right:0px;
+	width:100%;
+}
+
+ul.MenuBarHorizontal {
+	font-family:Arial, Helvetica, sans-serif;
+	margin-bottom:-2%;
+	margin-top:1.9%;
+	margin-left:15%;
+	margin-right:2%;
+	font-weight:normal;
+	font-variant:none;
+	padding: 0;
+	list-style-type:none;
+	font-size: 100%;
+	cursor: default;
+	width: auto;
+	background:transparent;
+}
+
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.htmll */
+ul.MenuBarActive
+{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+
+ul.MenuBarHorizontal li {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	font-size: 1.2em;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	width:8.45em;
+	float: left;
+	display: block;
+	color: rgb(0,0,0);
+	background-color: rgb(255,255,255);
+	border-style: solid;
+	border-radius: 20px;
+}
+
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul
+{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	font-size:0.8em;	
+	cursor: default;
+	width: 10.7em;
+	position: absolute;
+	left: -1000em;
+	z-index: 1020;
+	border-radius:20px;
+}
+
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+	left: auto;
+}
+
+ul.MenuBarHorizontal ul li
+{
+	width: 100%;
+	background-color: rgb(0,0,0);
+	border-radius:20px;
+}
+
+ul.MenuBarHorizontal ul ul
+{
+	width:100%;
+	position: absolute;
+	background-color: rgb(255,255,255);
+}
+
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	top: 0;
+	background-color: rgb(255,255,255);
+}
+
+ul.MenuBarHorizontal ul
+{
+	background-color: rgb(255,255,255);
+}
+
+ul.MenuBarHorizontal a
+{	
+	display:block;
+	cursor: pointer;
+	color:rgb(0,0,0);
+	text-decoration: none;
+	background-color:rgb(255,255,255);
+	border-radius:20px;
+	font-weight:bold;
+}
+
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+
+	background-color:rgb(0,204,255);
+	padding:0;
+	color: rgb(0,0,0);
+	font-weight:bold;
+}
+
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+
+	background-color:rgb(0,0,0);
+	padding:0;
+	color: rgb(255,255,255);
+	font-weight:bold;
+}
+
+ul.MenuBarHorizontal ul ul
+{
+	position: absolute;
+	margin: -5% 0 0 95%;
+	background-color: black;
+}
+
+ul.MenuBarItemSubmenu li
+{
+	border:1px solid aqua;
+	border-radius:20px;	
+}
+
+/*************** BODY STYLES FOR PAGE *******************/
+
+section.full {
+	width:100%;
+	background-color:rgba(0,0,0,0.7);
+}
+
+section#full {
+	width:100%;
+	margin:0 auto;
+	background-color:rgba(0,0,0,0.6);
+}
+
+section#full2 {
+	width:100%;
+	max-width:1600px;
+	margin:0 0 0 180px;
+	background-color:transparent;
+}
+
+section#half {
+	width:100%;
+	max-width:800px;
+	float:right;
+	clear:right;
+	background-color:transparent;
+}
+
+section#partfull {
+	width:100%;
+	height:auto;
+	background-color:transparent;
+	margin:0 auto;
+}
+
+section#partfull2 {
+	width:100%;
+	height:auto;
+	max-width:1600px;
+	background-color:transparent;
+	margin:10px auto;
+}
+
+section#partfull p {
+	width:75%;
+	max-width:800px;
+	margin:2%;
+	font-size:24px;
+	color:rgb(255,255,255);	
+}
+
+section#partfull2 p {
+	width:100%;
+	max-width:800px;
+	margin:1% 2% 0 24%;
+	font-size:18px;
+	color:rgb(255,255,255);	
+}
+
+section#full2 h1 {
+	font-family:"Star Jedi Rounded";
+	color:rgb(255,255,255);
+	font-size:26px;
+	-webkit-text-stroke: 2px black !important;
+	text-shadow: 3px 3px 3px rgb(0,153,204)!important;
+	margin-left:680px;
+}
+
+section#full2 h2 {
+	font-family:"Star Jedi Rounded";
+	color:rgb(255,255,255);
+	font-size:26px;
+	-webkit-text-stroke: 2px black !important;
+	text-shadow: 3px 3px 3px rgb(0,153,204)!important;
+	text-align:center;
+}
+
+section#half h2 {
+	font-family:"Star Jedi Rounded";
+	color:rgb(255,255,255);
+	font-size:26px;
+	-webkit-text-stroke: 2px black !important;
+	text-shadow: 3px 3px 3px rgb(0,153,204)!important;
+	margin-left:-170px;
+}
+
+section#form {
+	width:100%;
+	max-width:540px;
+	height:auto;
+	border: 2px outset rgb(255,255,255);
+	margin:0;
+	float:left;
+	clear:left;
+	background-color:rgb(255,255,255);
+	
+}
+section#form2 {
+	width:100%;
+	max-width:540px;
+	height:397px;
+	border: 2px outset rgb(255,255,255);
+	margin:0px 0 0 0;
+	float:left;
+	clear:both;
+	background-color:rgb(255,255,255);
+
+}
+
+section#hometop {
+	float:right;
+	clear:right;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	margin-top:20px;
+	margin-right:60px;
+	width:100%;
+	max-width:780px;
+	height:850px;
+	background-color:rgba(0,0,0,0.5);
+}
+
+section#mainpart {
+	float:right;
+	clear:right;
+	border: 3px solid rgb(71,111,150);
+	margin-top:20px;
+	margin-right:60px;
+	width:100%;
+	max-width:975px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);
+	padding:0;
+}
+
+section#aboutus {
+	float:left;
+	clear:left;
+	margin-top:20px;
+	margin-left:60px;
+	width:100%;
+	max-width:700px;
+	height:850px;
+	background-color:rgba(115,99,87,0.5);
+}
+
+section#shuttle {
+	border:2px solid rgb(255,255,255); 
+	padding:1%; 
+	margin:2% auto;
+	background-color:rgba(0,0,0,0.7);
+	width:970px;
+	height:auto;
+	float:left;
+	clear:left;
+}
+
+section#left {
+	float:left;
+	clear:none;
+	border:3px solid rgb(71,111,150);
+	margin:0 0 auto 0;
+	width:100%;
+	max-width:475px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);
+}
+
+section#right {
+	float:right;
+	clear:right;
+	border: 3px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:475px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);
+}
+
+section#left h2 {
+	font-family: Rockwell;
+	font-size: 20px;
+	font-weight: normal;
+	color: rgb(255,255,255);
+	line-height: normal;
+	text-align: center;
+}
+
+section#right h2 {
+	font-family: Rockwell;
+	font-size: 20px;
+	font-weight:normal;
+	color: rgb(255,255,255);
+	line-height: normal;
+	text-align: center;
+}
+
+section#paragraph {
+	float:left;
+	clear:none;
+	width:543px;
+	height:700px;
+	margin:0 auto;
+	padding:1%;
+	background-color:rgba(0,0,0,0.8);
+}
+ 
+p.indent {
+	font-size: 16px;
+	color:rgb(79,164,191);
+	text-align:justify;
+	text-indent:20px;
+	background-color:rgba(0,0,0,0.7);
+	padding:1%;
+	width:800px;
+}
+
+p#main {
+	font-size: 16px;
+	color:rgb(255,255,255);
+	text-align:justify;
+	text-indent:15px;
+	background-color:rgba(0,0,0,0.9);
+	padding:1%;
+	width:auto;
+}
+
+p.indent2 {
+	font-size:20px;
+	color:white;
+	text-align:left;
+	text-indent:50px;
+	margin:1% 7% 1% 6%;
+	line-height:normal;
+}
+
+
+section#aboutus h3 {
+	font-size: 24px;
+	color:rgb(0,204,255);
+	text-align:center;
+	text-indent:0px;
+	background-color:transparent;
+	text-decoration:underline;
+	font-weight:bold;
+	padding:0;
+	width:auto;	
+}
+
+video {
+	width:99%;
+	max-width:785px;
+	margin:1% 0 0 0;
+	height:auto;
+}
+
+aside {
+	margin:80px 0 10px 0;
+	width:100%;
+	max-width:700px;
+	height:auto;
+	float:left;
+}
+
+/* FOOTER STYLES ----------------------------------------------------------------------------------------------------------------------------------- */
+ footer {
+	position: absolute;
+    left: 0;
+	right: 0;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+	background-color:rgba(0,0,0,0.8);
+	border:2px outset rgb(0,255,255);
+	border-radius:15px;
+	color:rgb(255,255,255);	
+ }
+
+p.return {
+	text-align:center;	
+	vertical-align:bottom;
+	color:aqua;	
+	font-size:22px;
+	font-family: Rockwell;
+	text-decoration:underline;
+	margin:15px auto;
+	background-color:black;
+	width:225px;
+	border:2px solid aqua;
+	border-radius:20px;
+
+}
+
+p.return a {
+	color:white;
+	background-color:black;
+	width:auto;
+}	
+
+.contact .fa:before {
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.contact li#mailing {
+  display:inline-block;
+  list-style-type: none;
+  margin-top:10px;
+  margin-left:480px;
+  margin-right:480px;
+  text-align: center;
+}
+
+.contact li#phone {
+  display: inline-block;
+  list-style-type: none;
+  margin-top:10px;
+  margin-left:15px;
+  text-align: center;
+}
+
+.contact li#emailme {
+  display: inline-block;
+  list-style-type: none;
+  margin-top:10px;
+  margin-right:10px;
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.cont {
+  text-align: center;
+}
+
+/**************** IMAGE STYLING ******************/
+
+img#launch {
+	border:8px outset rgb(255,255,255);	
+	width:930px;
+	height:600px;
+	margin:0 auto;
+}
+
+img#arrow {
+	max-width:25px;
+	max-height:25px;
+	width:100%;
+	height:100%;
+}
+
+img.pages {
+	border: 8px outset rgba(71,111,150,0.8);
+	margin:0 auto;
+	width:100%;
+	max-width:475px;
+	height:300px;
+}
+
+img#welcmhomepg {
+	width:100%;
+	height:auto;
+	max-width:776px; 
+	float:right; 
+	clear:right; 
+	margin-bottom:2%;
+	border:1px solid rgb(0,153,204);
+	border-radius:20px;
+	-moz-border-radius:20px;
+}
+
+img#planetbanner {
+	margin:45px 0 5px 225px;
+	max-width:1136px;
+}
+
+img#dwarfbanner {
+	margin:45px 0px 5px 225px;
+	max-width:1136px;	
+}
+
+img#sunmoonbanner {
+	margin:45px 0 5px 75px;
+	max-width:1136px;	
+}
+
+img#abtsitebanner {
+	max-width:694px;
+	float:left; 
+	clear:right;
+	margin:0 2px;
+	width:100%;
+	height:auto;
+	border:1px solid rgb(0,153,204);
+	border-radius:20px;
+	-moz-border-radius:20px;
+}
+
+img#leftbord {
+	max-width:75px;
+	width:100%;
+	height:718px;
+	float:left; 
+	clear:left;
+}
+
+img#rightbord {
+	max-width:82px;
+	width:100%;
+	height:718px;
+	float:right; 
+	clear:right;
+}
+
+img#links {
+	width:100%;
+	height:100%;
+	max-width:1000px;
+	margin:10px auto 10px 190px;
+}
+
+img#shuttle {
+	float:left; 
+	clear:left; 
+	width:780px; 
+	height:514px; 
+	margin-top:20px; 
+	margin-left:60px;
+	border-radius:20px;
+}
+
+/************** PLANETS MODALS STYLES ********************/
+table#planets {
+	width:100%;
+	max-width:800px;
+	height:auto;
+}
+
+tbody#planets td {
+	color: rgb(255,255,255);
+	font-size: 15px;
+	width: 50%;
+	float: left;
+	clear: right;
+}
+
+
+thead#planets {
+	width:100%;
+	table-layout:auto;
+	display:inline-table;
+	background-color:transparent;
+	border-top:1px solid rgb(174,173,169);
+	border-bottom:1px solid rgb(174,173,169);
+}
+
+thead#planets th {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 50%;
+	font-size: 15px;
+	color: rgb(0,204,255);
+	background-color: rgba(51,49,50,1);
+	float: left;
+}
+
+
+.modal-body#planets {
+	background-color:rgba(0,0,0,0.8);
+	margin-left:0px;
+	margin-right:0px;
+	border:2px solid rgb(255,255,255);
+	border-radius:20px;
+}
+
+h4.modal-title#planets {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 32px;
+	color: rgba(0,204,255,1);
+	font-variant: small-caps;
+}
+.modal-footer#planets {
+	background-color: rgba(0,0,0,1);
+	border:2px solid rgb(255,255,255);
+	border-radius:20px;
+}
+
+.modal-header#planets {
+	background-color: rgba(0,0,0,1);
+	border:2px solid rgb(255,255,255);
+	border-radius:20px;
+}
+	
+.modal-footer#planets a h5 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: rgb(0,102,255);
+	font-variant: small-caps;
+}
+
+td, th {
+	text-align:center;
+}
+
+td#planets a {
+	color:rgb(204,255,0);
+	font-size:16px;	
+}
+
+.modal-title{
+	font-size:40px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.row {
+	margin-right: 80px;
+	margin-left: 20px;
+}
+
+h4.modal-title {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 32px;
+	color: rgb(0,153,255);
+	font-variant: small-caps;
+	text-align: center;
+}
+
+img#modal {
+	width:100%;
+	height:auto;
+	margin: 10px auto 25px auto;	
+	border-radius:20px;
+}
+	
+.modal-footer a h5 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:rgb(244,72,10);
+	font-variant:small-caps;
+}
+
+.modal-content {
+	width:90%;	
+}
+
+.close {
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	color: rgba(189,21,3,0.7);
+	text-shadow: 0 1px 0 #fff;
+	filter: alpha(opacity=80);
+	opacity: 0;
+}
+
+.close:focus, .close:hover {
+	color:rgba(189,21,3,0.7);
+	text-decoration: none;
+	cursor: pointer;
+	filter: alpha(opacity=100);
+	opacity: 0;
+}
+
+button.close {
+	-webkit-appearance: none;
+	padding: 0;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	background-color:rgb(189,21,3);
+}
+
+div.gallery#planets {
+	border-radius:15px;
+	margin:0 25px;
+	width: 100%;
+    height: 100%;
+}
+
+div.gallery#planets img {
+    width: 100%;
+    height: 100%;
+	background-color:rgba(0,0,0,0.5);
+	border-radius:15px;
+}
+
+section#half div.gallery img {
+	width:100%;
+	height:auto;
+	background-color:rgba(0,0,0,0.5);
+	border-radius:15px;
+}
+
+.desc {
+    padding: 2px;
+	width:320px;
+	height:45px;
+    text-align: center;
+	color:rgb(0,0,0);
+	font-size:20px;
+	margin-left:0px;
+	margin-right:0px;
+	background-color:rgba(255,255,255,1);
+}
+.xnth {
+  position: relative;
+  top: -1.0em;
+  right:0;
+  font-size:50%;
+}
+
+.desc a {
+	color:rgb(255,255,255);	
+}
+.desc a:hover {
+	color:rgb(255,0,0);	
+}
+/****************** RESPONSIVE STYLES VARIOUS ***************************/
+
+.responsive {
+    padding: 0;
+    float: left;
+    width: 22%;
+}
+
+.responsive2 {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+section#half .responsive {
+	padding: 0;
+    float: left;
+    width: 37.5%;
+}
+
+/*************media query styles for mobile responsiveness***************/
+
+@media screen and (max-device-width: 375px) and (orientation:portrait) {
+
+	
+* {
+	height:auto;
+	width:100%;
+	max-width:375px;
+	}
+	
+select {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+	margin:0 auto;
+}
+
+select#knowmore {
+	width:100%;
+	border:none;
+	border-radius:4px;
+	background-color:rgb(255,255,255);
+	margin:0 auto;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 49%;
+    background-color:rgb(0,0,0);
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset] {
+	background-color:rgb(0,0,0);
+	width: 49%;
+	color:white;
+	padding: 14px 20px;
+	margin:0 auto;
+	border: none;
+	border-radius: 4px;
+	cursor:pointer;
+}
+
+input[type=checkbox] {
+	margin-left:45%;
+}
+	
+form {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	margin:0 auto;
+	width:100%;
+	max-width: 375px;
+	background-color:rgba(51,51,51,0.9);
+	padding:0;
+}
+	
+fieldset legend {
+		text-align: center;
+		font-size:18px;
+		margin:0 auto;
+		width:100%;
+	}
+
+#locationradio {
+	width:100%;
+	max-width:667px;
+	height:auto;
+	border:1px solid rgb(255,0,255);
+	margin:0 auto;
+}
+
+#locationradio1 {
+	text-align:center;
+	float:none;
+	clear:none;
+	width:100%;
+	
+}
+
+#locationradio2 {
+	text-align:center;
+	float:none;
+	clear:none;
+	width:100%;
+
+}
+
+#locationradio3 {
+	text-align:center;
+	float:none;
+	clear:none;
+	width:100%;
+}
+
+legend.loc {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	text-align:center;
+	font-size:26px;
+	color:yellow;
+	font-weight:bold;	
+}
+
+label.locay {
+	font-family:Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	text-align:center;
+	margin:0 auto;
+	font-size:16px;
+	color:rgb(0,153,255);
+	font-weight:normal;	
+}
+
+legend.homeform {
+	font-family:Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana,' sans-serif';
+	font-size:24px;
+	font-weight:bolder;
+	color:rgb(255,0,255);
+	text-align:center;	
+	width:100%;
+}
+
+label {
+  	font-family:Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana,' sans-serif';
+  	font-size:18px;
+  	color:rgb(255,255,255);
+	font-weight:normal;
+	margin: 0 auto;
+	text-align: center;
+}
+
+label.question {
+	font-family:Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	font-size:14px;
+	color:rgb(0,153,255);
+	margin:0 auto;
+}
+
+label.sendme {
+	font-family:Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	font-size:14px;
+	color:rgb(0,153,255);
+	margin:0 auto;
+	text-align:center;
+}
+
+span textarea {
+    width: 100%;
+	max-width: 375px;
+    height: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 2px;
+    background-color:rgb(0,153,255);
+    resize:none;
+	margin:0 auto;
+}
+	
+body {
+	background-image: url("/images/Galaxies/pinwheel galaxy.jpg");
+	background-repeat:no-repeat;
+	width:100%;
+	max-width: 375px;
+	height:auto;
+	margin:0 auto;
+	left:0;
+	right:0;
+	background-size:cover;
+	background-color:black;
+}
+
+section#full {
+	position: relative;
+	width:100%;
+	max-width:375px;
+	height:auto;
+	margin:0 auto;
+	background-color:black;
+}
+
+section#full2 {
+	position: relative;
+	width:100%;
+	max-width:375px;
+	height:auto;
+	margin:0 auto;
+	background-color:black;
+}
+
+section#half h2 {
+	font-family:"Star Jedi Rounded";
+	color:rgb(255,255,255);
+	font-size:20px;
+	-webkit-text-stroke: 1px black !important;
+	text-shadow: 2px 2px 2px rgb(0,153,204)!important;
+	margin:0 auto;
+}
+
+section#form {
+	width:100%;
+	max-width:375px;
+	height:auto;
+	border: 1px outset rgb(255,255,255);
+	margin:0 0 10px 0;
+	float:none;
+	clear:none;
+	background-color:rgb(255,255,255);
+	
+}
+	
+section#form2 {
+	width:100%;
+	max-width:375px;
+	height:auto;
+	border: 1px outset rgb(255,255,255);
+	margin:0 auto;
+	float:none;
+	clear:none;
+	background-color:rgb(255,255,255);
+
+}
+
+section#hometop {
+	float:none;
+	clear:none;
+	border: 1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:375px;
+	height:auto;
+	background-color:rgba(115,99,87,0.7);
+}
+
+section#mainpart {
+	float:none;
+	clear:none;
+	border: 1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:375px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);
+	padding:0;
+}
+
+section#aboutus {
+	float:none;
+	clear:none;
+	border:1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:375px;
+	height:auto;
+	background-color:rgba(115,99,87,0.7);
+}
+
+section#formenclose {
+	float:none;
+	clear:none;
+	border:1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:375px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);	
+}
+
+section#left {
+	float:none;
+	clear:none;
+	border:1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:375px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);
+}
+
+section#right {
+	float:none;
+	clear:none;
+	border: 1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:375px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);
+}
+
+section#left h2 {
+	font-family: Rockwell;
+	font-size: 15px;
+	font-weight: normal;
+	color: rgb(255,255,255);
+	line-height: normal;
+	text-align: center;
+}
+
+section#right h2 {
+	font-family: Rockwell;
+	font-size: 15px;
+	font-weight:normal;
+	color: rgb(255,255,255);
+	line-height: normal;
+	text-align: center;
+}
+
+section#paragraph {
+	float:none;
+	width:100%;
+	max-width: 375px;
+	height:auto;
+	margin:0 auto;
+}
+ 
+p.indent {
+	width:100%;
+	font-size: 14px;
+	color:rgb(79,164,191);
+	text-align:justify;
+	text-indent:0;
+	background-color:rgba(0,0,0,0.7);
+	padding:1%;
+}
+
+p.indent2 {
+	width:100%;
+	font-size:15px;
+	color:white;
+	text-align:left;
+	text-indent:0;
+	margin:0 auto;
+	line-height:normal;
+}
+
+p.return {
+	font-size:14px;
+	color:black;
+	clear:both;
+	text-align:left;
+	margin:0 auto;
+}
+
+p.return a {
+	color:black;	
+	font-size:14px;
+	font-family:"Star Jedi Rounded";
+	text-decoration:underline;
+}
+
+section#aboutus h3 {
+	font-size: 18px;
+	color:rgb(255,255,255);
+	font-weight:normal;
+	text-align:center;
+	text-decoration:underline;
+}
+
+img.pages {
+	width:100%;
+	height: 100%;
+	margin:0 auto;
+	max-width:375px;	
+	max-height:200px;
+}
+
+img#abtsitebanner {
+	max-width:375px;
+	float:none; 
+	clear:none;
+	width:100%;
+	height:auto;
+}	
+	
+img#planetbanner {
+margin:0 auto;
+	max-width:375px;	
+}
+
+img#dwarfbanner {
+	margin:0 auto;
+	max-width:375px;
+	width:100%;
+}
+
+img#sunmoonbanner {
+	margin:0 auto;
+	max-width:375px;	
+	width:100%;
+}
+
+img#gassy {
+	display: none;
+	max-width: 150px;
+	width:100%;
+	height:auto; 
+	float: left; 
+	clear: left; 
+	margin: 40px 0 0 30px;
+}
+
+img#rocky {
+	display: none;
+	max-width:150px;
+	width:100%;
+	height:auto; 
+	float:right; 
+	clear:right; 
+	margin:40px 25px 0 20px;
+}
+	
+img#arrow {
+	max-width:25px;
+	max-height:25px;
+	width:50%;
+	height:50%;
+}
+
+section#formenclose section#full img#imgform {
+	width:100%;
+	height:100%;
+	max-width:375px;
+	max-height:50px;
+	margin:0 auto;
+}
+
+section#formenclose section#full img#imgform2 {
+	width:100%;
+	height:100%;
+	max-width:375px;
+	max-height:50px;
+	margin:0 auto;
+}
+
+img#linkstopages {
+	width:100%;
+	height:100%;
+	max-width:375px;
+	max-height:100px;
+	float:none;
+	clear:none;	
+}
+
+	
+video {
+	width:100%;
+	max-width:375px;
+	margin:0 auto;
+	height:700px;
+}		
+	
+
+#wrapperHeader {
+	width: 100%;
+	max-width: 375px;
+	height:auto;
+}
+
+div#wrapperHeader div#header {
+	width: 100%;
+	max-width: 375px;
+	height:auto;
+	margin:0 auto;
+}
+
+div#wrapperHeader div#header img {
+	width:auto;
+	height:auto;
+	max-width: 375px;
+	margin:0 auto;
+}
+
+div#header {
+	width: 100%;
+	max-width: 375px;
+	height:auto;
+	margin:0 auto;
+	padding:0;
+}
+	
+nav {
+	margin:0 auto;
+	width:100%;
+	max-width: 375px;
+}
+
+ul.MenuBarHorizontal {
+	margin:0 5px 5px 30px;
+	font-size: 100%;
+	cursor: default;
+	width:100%;
+	max-width:375px;
+	background:transparent;
+}
+
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.htmll */
+ul.MenuBarActive{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+
+ul.MenuBarHorizontal li {
+	font-size: 1.2em;
+	text-align: center;
+	cursor: pointer;
+	width: 8.45em;
+	float: none;
+	color: rgb(0,0,0);
+	background-color: rgb(255,255,255);
+	display:inline-block;
+	border-bottom: 2px solid black;
+}
+
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul{
+	font-size:.8em;	
+	cursor: default;
+	width:10.4em;
+	z-index: 1020;
+}
+
+img#leftbord {
+		display: none;
+	max-width:20px;
+	width:100%;
+	float:left; 
+	clear:left;
+}
+
+img#rightbord {
+	display: none;
+	max-width:20px;
+	width:100%;
+	float:right; 
+	clear:right;
+}
+
+}
+
+@media screen and (max-device-width: 667px) and (orientation:landscape) {
+
+	
+* {
+	max-width:667px;
+	height:auto;
+	width:100%;
+}
+
+select {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+	margin:0 auto;
+}
+
+select#knowmore {
+	width:100%;
+	border:none;
+	border-radius:4px;
+	background-color:rgb(255,255,255);
+	margin:0 auto;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 49%;
+    background-color:rgb(0,0,0);
+    color: white;
+    padding: 14px 20px;
+    margin:0 auto;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+	margin-left:45%;
+}
+
+input[type=reset] {
+	background-color:rgb(0,0,0);
+	width: 49%;
+	color:white;
+	padding: 14px 20px;
+	margin:0 auto;
+	border: none;
+	border-radius: 2px;
+	cursor:pointer;
+}
+	
+form {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	margin:0 auto;
+	width:100%;
+	max-width: 667px;
+	background-color:rgba(51,51,51,0.9);
+	padding:0;
+}
+	
+fieldset legend {
+	text-align: center;
+	font-size:18px;
+	margin:0 auto;
+	width:100%;
+}
+
+#locationradio {
+	width:100%;
+	max-width:667px;
+	height:auto;
+	border:1px solid rgb(255,0,255);
+	margin:0 auto;
+}
+
+#locationradio1 {
+	text-align:center;
+	float:none;
+	clear:none;
+	width:100%;
+	
+}
+
+#locationradio2 {
+	text-align:center;
+	float:none;
+	clear:none;
+	width:100%;
+
+}
+
+#locationradio3 {
+	text-align:center;
+	float:none;
+	clear:none;
+	width:100%;
+}
+
+legend.loc {
+	text-align:center;
+	font-size:10px;
+	color:yellow;
+	font-weight:bold;	
+}
+
+label.locay {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	text-align:center;
+	margin:0 auto;
+	font-size:14px;
+	color:rgb(0,153,255);
+	font-weight:normal;	
+}
+
+legend.homeform {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	font-size:24px;
+	font-weight:bolder;
+	color:rgb(255,0,255);
+	text-align:center;	
+	width:100%;
+}
+
+label {
+  	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+  	font-size:100%;
+  	color:rgb(255,255,255);
+	font-weight:normal;
+	margin: 0 auto;
+	text-align: center;
+}
+
+label.question {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	font-size:14px;
+	color:rgb(0,153,255);
+	margin:0 auto;
+}
+
+label.sendme {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	font-size:14px;
+	color:rgb(0,153,255);
+	margin:0 auto;
+}
+
+span textarea {
+    width: 100%;
+	max-width: 667px;
+    height: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 2px;
+    background-color:rgb(0,153,255);
+    resize:none;
+	margin:0 auto;
+}
+	
+
+img#welcmhomepg {
+	width:100%;
+	height:auto;
+	max-width:667px; 
+	float:none; 
+	clear:none; 
+	margin-bottom:0;
+}
+	
+img#leftbord {
+	display: none;
+	max-width:50px;
+	width:100%;
+	float:left; 
+	clear:left;
+}
+
+img#rightbord {
+	display: none;
+	max-width:50px;
+	width:100%;
+	float:right; 
+	clear:right;
+}
+		
+body {
+	background-image:url(../images/Galaxies/pinwheel%20galaxy.jpg);
+	background-repeat:no-repeat;
+	width:100%;
+	margin:0 auto;
+	max-width: 667px;
+	background-size:cover;
+	background-color:black;
+}
+
+section#half h2 {
+	font-family:"Star Jedi Rounded";
+	color:rgb(255,255,255);
+	font-size:20px;
+	-webkit-text-stroke: 1px black !important;
+	text-shadow: 2px 2px 2px rgb(0,153,204)!important;
+	margin:0 auto;
+}
+	
+section#full {
+	width:100%;
+	max-width:667px;
+	height:auto;
+	margin:0;
+	background-color:black;
+}
+
+section#full2 {
+	width:100%;
+	max-width:667px;
+	height:auto;
+	margin:0;
+	left:0;
+	right:0;
+	background-color:black;
+}
+
+section#form {
+	width:100%;
+	max-width:667px;
+	height:auto;
+	border: 1px outset rgb(255,255,255);
+	margin:0 0 10px 0;
+	float:none;
+	clear:none;
+	background-color:rgb(255,255,255);
+	
+}
+	
+section#form2 {
+	width:100%;
+	max-width:667px;
+	height:auto;
+	border: 1px outset rgb(255,255,255);
+	margin:0 auto;
+	float:none;
+	clear:none;
+	background-color:rgb(255,255,255);
+
+}
+
+section#hometop {
+	float:none;
+	clear:none;
+	border: 1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:667px;
+	height:700px;
+	background-color:rgba(115,99,87,0.7);
+}
+
+section#mainpart {
+	float:none;
+	clear:none;
+	border: 1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:667px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);
+	padding:0;
+}
+
+section#aboutus {
+	float:none;
+	clear:none;
+	border:1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:667px;
+	height:auto;
+	background-color:rgba(115,99,87,0.7);
+}
+
+section#formenclose {
+	float:none;
+	clear:none;
+	border:1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:667px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);	
+}
+
+section#left {
+	float:none;
+	clear:none;
+	border:1px solid rgb(71,111,150);
+	margin:0 auto;
+	width:100%;
+	max-width:667px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);
+}
+
+section#right {
+	float:none;
+	clear:none;
+	border: 1px solid rgb(71,111,150);
+	margin-right:0;
+	width:100%;
+	max-width:667px;
+	height:auto;
+	background-color:rgba(0,0,0,0.7);
+}
+
+section#left h2 {
+	font-family: Rockwell;
+	font-size: 15px;
+	font-weight: normal;
+	color: rgb(255,255,255);
+	line-height: normal;
+	text-align: center;
+}
+
+section#right h2 {
+	font-family: Rockwell;
+	font-size: 15px;
+	font-weight:normal;
+	color: rgb(255,255,255);
+	line-height: normal;
+	text-align: center;
+}
+
+section#paragraph {
+	float:none;
+	width:100%;
+	max-width: 667px;
+	height:auto;
+	margin:0 auto;
+	padding:1%;
+}
+ 
+p.indent {
+	width:100%;
+	font-size:14px;
+	color:rgb(79,164,191);
+	text-align:justify;
+	text-indent: 0;
+	background-color:rgba(0,0,0,0.7);
+	padding:1%;
+}
+
+p.indent2 {
+	font-size:15px;
+	color:white;
+	text-align:left;
+	text-indent:0;
+	margin:0 auto;
+	line-height:normal;
+}
+
+p.return {
+	font-size:14px;
+	color:black;
+	text-align:left;
+	margin:0 auto;
+	bottom:0;
+}
+
+p.return a {
+	color:black;	
+	font-size:14px;
+	font-family:"Star Jedi Rounded";
+	text-decoration:underline;
+}
+
+section#aboutus h3 {
+	font-size: 18px;
+	color:rgb(255,255,255);
+	font-weight:normal;
+	text-align:center;
+	text-decoration:underline;
+}
+
+img.pages {
+	width:100%;
+	height: 100%;
+	margin:0 auto;
+	max-width:667px;	
+	max-height:375px;
+}
+
+img#planetbanner {
+margin:0 auto;
+	max-width:667px;	
+}
+	
+img#dwarfbanner {
+margin:0 auto;
+	max-width:667px;	
+	}
+	
+img#sunmoonbanner {
+	margin:0 auto;
+	max-width:667px;	
+}
+
+img#gassy {
+	display: none;
+	max-width: 150px;
+	width:100%;
+	height:auto; 
+	float: left; 
+	clear: left; 
+	margin: 40px 0 0 30px;
+}
+
+img#rocky {
+	display: none;
+	max-width:150px;
+	width:100%;
+	height:auto; 
+	float:right; 
+	clear:right; 
+	margin:40px 25px 0 20px;
+}
+
+img#abtsitebanner {
+	max-width:667px;
+	float:none; 
+	clear:none;
+	width:100%;
+	height:auto;
+}
+	
+img#arrow {
+	max-width:25px;
+	max-height:25px;
+	width:70%;
+	height:70%;
+}
+		
+section#formenclose section#full img#imgform {
+	width:100%;
+	height:100%;
+	max-width:667px;
+	max-height:75px;
+	margin:0 auto;
+}
+
+section#formenclose section#full img#imgform2 {
+	width:100%;
+	height:100%;
+	max-width:667px;
+	max-height:75px;
+	margin:0 auto;
+}
+
+img#linkstopages {
+	width:100%;
+
+	height:100%;
+	max-width:667px;
+	max-height:100px;
+	float:none;
+	clear:none;	
+}	
+	
+video {
+	width:100%;
+	max-width:667px;
+	margin:0 auto;
+	height:auto;
+}	
+	
+nav {
+	margin:0 auto;
+	width:100%;
+	max-width: 667px;
+}
+
+ul.MenuBarHorizontal {
+	margin:0 5px 5px 30px;
+	font-size: 100%;
+	cursor: default;
+	width:100%;
+	max-width:667px;
+	background:transparent;
+}
+
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.htmll */
+ul.MenuBarActive{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+
+ul.MenuBarHorizontal li {
+	font-size: 1.2em;
+	text-align: center;
+	cursor: pointer;
+	width: 8.45em;
+	float: none;
+	color: rgb(0,0,0);
+	background-color: rgb(255,255,255);
+	display:inline-block;
+	border-bottom: 2px solid black;
+}
+
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul{
+	font-size:0.8em;	
+	cursor: default;
+	width:10.4em;
+	
+	z-index: 1020;
+	border-bottom: 2px solid black;
+}
+	
+#wrapperHeader {
+	width: 100%;
+	max-width: 667px;
+	height:auto;
+}
+
+div#wrapperHeader div#header {
+	width: 100%;
+	max-width: 667px;
+	height:auto;
+	margin:0 auto;
+}
+
+div#wrapperHeader div#header img {
+	width:auto;
+	height:auto;
+	max-width: 667px;
+	margin:0 auto;
+}
+
+div#header {
+	width: 100%;
+	max-width: 667px;
+	height:auto;
+	margin:0 auto;
+	padding:0;
+}
+
+}
+
+@media (min-width:668px) {
+
+.responsive {
+    padding: 0;
+    float: left;
+    width: 20%;
+	margin:0 auto;
+}
+
+.container {
+	width: 650px;
+}
+div.desc {
+    padding: 0px;
+    text-align: center;
+	font-weight:normal;
+	color:rgb(0,0,0);
+	font-size:20px;
+	border: 1px solid rgb(0,0,0);
+	margin-left:0px;
+	margin-right:0px;
+	background-color:rgba(255,255,255,1);
+}
+}
+
+@media (min-width:992px) {
+	
+.responsive {
+    padding: 0;
+    float: left;
+    width: 20%;
+}
+
+.container {
+	width: 970px;
+	margin:0 auto;
+}
+
+}
+
+@media (min-width:1200px) {
+	
+.responsive {
+    padding: 0;
+    float: left;
+    width: 20%;
+}
+
+.container {
+	width: 1180px;
+	margin:0 auto;
+}
+
+}

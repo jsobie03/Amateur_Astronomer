@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	      PROJECT: WEB 121A FINAL PROJECT ASSIGNMENT
+         SITENAME: The Amateur Astronomer
+	DOCUMENT NAME: The 8 Planets (.html)
+           AUTHOR: Jonathan Sobier
+  START to FINISH: (4-2-2017) to (5-4-2017)
+     
+  SITE FILES USED:
+              CSS: amateurastronomer.css, main.css, bootstrap.min.css, tests.css, solarsystem.css, eventcal.css, form_clear.css, font-awesome.min.css
+               JS: jquery.min.js, bootstrap.min.js, menu.js, planetmodal.js, tests.js, resetbtn.js, prefixfree.min.js, scripts.min.js
+             HTML: amastrohome.html, planets.html, dwarf.html, sunmoon.html, tests.html, events.html, 3dorbit.html,
+                   links.html
+-->
+
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>The Amateur Astronomer | The 8 Planets</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" 
+       content="The Amateur Astronomer, space, solar system, planets, Earth, Jupiter, Mars, Saturn, 
+            	Pluto, Uranus, Mercury, Venus, Sun, Ceres, Neptune, comets, asteroids, meteors, 
+            	meteorites, milky way, moons, satellites, space travel, universe, nebulae, SpaceX, 
+            	exploration, dwarf planets, Luna, comet tail, stars"/>
+
+	<meta name="description" 
+   	   content="The Amateur Astronomer is a place for anyone interested in astronomy to come and 
+   				learn all they wish! All are welcome and site is updated ofted!"/>
+           
+	<meta name="viewport" content="width=device-width" initial-scale="1"/>
+	  
+      <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css"/>
+	  <link href="https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css" rel="stylesheet" type="text/css"/>	
+	  <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	  <script language="JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="js/menu.js" type="text/javascript"></script>
+<style>
+
+th,td,thead,tbody,h4 {
+	font-style:normal;
+}
+
+tr#planets th#elements {
+  text-align:center;
+  font-weight:normal;
+  font-family:"Kozuka Mincho Pro H";
+  font-size:18px;
+  color:rgb(255,0,255);
+}
+
+html {
+	position: relative;
+	min-height:100%;	
+}
+
+body {
+	width:100%;
+	margin:0 0 130px;	
+}
+
+section#partfull2 p.indent3 {
+	width:100%;
+	max-width:1300px;
+	padding:1%;
+	margin:0 auto;
+	font-size:22px;
+	text-indent:20px;
+	text-align:center;
+	color:rgb(255,255,255);	
+	background-color:rgba(0,0,0,0.9);
+}
+
+div.desc {
+	padding:2px;
+	width:316px;
+	height:40px;
+    text-align: center;
+	color:rgb(0,0,0);
+	font-style:normal;
+	font-size:22px;
+	border-radius:15px;
+	margin-left:0px;
+	margin-right:0px;
+	background-color:rgba(0,153,255,1);
+}
+</style>
+</head>
+
+<body>
+<a name="top"></a>
+<div id="wrapperHeader">
+<div id="header">
+<img src="images/amateur.png" alt="homepage header image"/>
+</div>
+
+<nav>
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a class="MenuBarItemSubmenu" href="index.html">Home</a></li>    
+    <li><a class="MenuBarItemSubmenu" href="planets.html">The Planets</a></li>
+    <li><a class="MenuBarItemSubmenu" href="dwarf.html">Dwarf Planets</a></li>
+    <li><a class="MenuBarItemSubment" href="sunmoon.html">Moons & Stars</a></li>
+    <li><a class="MenuBarItemSubmenu" href="tests.html">Space Quiz</a></li>
+    <li><a class="MenuBarItemSubmenu" href="events.html">Astro Events</a></li>
+	<li><a class="MenuBarItemSubmenu" href="newdisc.html">New Discoveries</a></li>
+    <li><a class="MenuBarItemSubmenu" href="3dorbit.html" target="_blank">3D Planets</a></li>
+    <li><a class="MenuBarItemSubmenu" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</div>
+
+<section id="partfull2">
+	<img src="images/theplanetstitle.png" id="planetbanner" alt="the title banner for the planets page"/> 
+    <br/>
+
+</section>
+<section id="partfull2">
+<iframe style="margin:0 auto 0 180px" src="https://player.vimeo.com/video/78449289?autoplay=1&title=0&byline=0&portrait=0" width="1250" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p class="indent3">This video gives an idea of what it may be like to travel through the solar system and see all the planets along the way. The animator did an extraordinary job at making this simulated flight so realistic. Watch and enjoy and then check out the information on the planets below.</p>
+</section>
+<section id="partfull2">
+
+<section id="full" style="width:1200px; background-color:rgba(0,0,0,0.8)"><h2 style="text-align:center; font-size:46px; font-weight:bold; color:rgb(0,159,159); width:1200px">Info on the Planets</h2>
+     <p class="indent3">These images are of the planets, sun, moons, and other objects that come together to make our solar system! Want more info
+   on each of these? If you do, click the image and you will see everything you need to see! Don't forget to check out our <a href="dwarf.html">Dwarf Planet</a> page and our <a href="sunmoon.html">Moons & Stars</a> page to see the other planet like objects that make up our Solar System!</p></section>
+</section>
+
+<section id="full2">
+<section id="partfull2">
+<!-- BEGIN MERCURY  -->
+<div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+      <button type="button" id="myBtn8" style="background:transparent"><img src="images/Planets/mercury-transparent.png" alt="Mercury"/></button>
+      <div class="desc" id="planets">MERCURY</div>
+      
+      <!-- THE MODAL -->
+      <div id="myModal8" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">MERCURY</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            <img src="images/Planets/mercury_1.jpg" id="modal" alt="Mercury"/> 
+<!-- Fact/Data Sheet Modal Table -->
+              
+              <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+                
+                <!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Mass&nbsp;(10<span class="xnth">&#50;&#49;</span>&nbsp;tons)</span></th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter&nbsp;(mi.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">0.364 &times; 10<span class="xnth">&#50;&#49;</span>&nbsp;tons</td>
+                    <td id="planets">3032 mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Density &nbsp;(lbs/ft&sup3;)</th>
+                    <th scope="row" id="planets" style="text-align:center">Gravity &nbsp;(ft/s&sup2;)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">339 lbs/ft&sup3;</td>
+                    <td id="planets">12.1 ft/s&sup2;</td>
+                  </tr>
+                </tbody>
+                
+                <!--Modal Table Row 3-->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Length of Day &nbsp;(hrs.)</th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Dist. from Sun &nbsp;(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">4222.6 hrs.</td>
+                    <td id="planets">36.0 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 4 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Perihelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Aphelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">28.6 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                    <td id="planets">43.4 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 5 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period &nbsp;(days)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Velocity&nbsp;(MPS)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">88.0 days</td>
+                    <td id="planets">29.4 MPS</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 6 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Inclination(degrees)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Eccentricity</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">7.0 degrees</td>
+                    <td id="planets">0.205</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 7 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Axial Tilt &nbsp;(deg.)</th>
+                    <th scope="row" id="planets" style="text-align:center">Mean Temperature &nbsp;(&deg;F)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">0.01 deg.</td>
+                    <td id="planets">333&deg;F</td>
+                  </tr>
+                </tbody>  
+                  <!-- Modal Table Row 8 -->
+                  
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Surface Pressure &nbsp;(Atm)</th>
+                    <th scope="row" id="planets" style="text-align:center">Number of Moons</th>
+                  </tr>
+                </thead>
+                <tbody  id="planets">
+                  <tr  id="planets">
+                    <td  id="planets">0 Atm</td>
+                    <td  id="planets">0</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 9 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Ring System?</th>
+                    <th scope="row" id="planets" style="text-align:center">Global Magnetic Field?</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">NO</td>
+                    <td id="planets">YES</td>
+                  </tr>
+                </tbody>
+<thead id="planets">
+                  <tr id="planets">
+                  <th scope="row" id="planets">&nbsp;</th>
+                  <th scope="row" id="planets">&nbsp;</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                 
+               <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center; font-size:18px; font-weight:bold; font-family:'Kozuka Mincho Pro H'">Atmospheric Composition=&nbsp;</th>
+                    
+                    
+                    <th id="elements">
+                    
+                    80&#37; (H)&nbsp;
+                    19&#37; (He)&nbsp;
+                    1&#37; (CH<sub>4</sub>)
+                   
+                    </th>
+                   </tr>
+                   </thead>
+              </table>
+           <!-- End of Modal Table --> 
+             </div> 
+            
+            <!-- End of Modal Body --> 
+
+
+            <div class="modal-footer" id="planets">
+            <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+<!-- END OF MERCURY -->
+
+<!-- BEGIN VENUS -->
+<div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+      <button type="button" id="myBtn7" style="background:transparent"><img src="images/Planets/venus-transparent.png" alt="Venus"/></button>
+      <div class="desc" id="planets">VENUS</div>
+      
+      <!-- THE MODAL -->
+      <div id="myModal7" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">VENUS</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            <img src="images/Planets/venus-transparent.png" id="modal" alt="Venus"/> 
+<!-- Fact/Data Sheet Modal Table -->
+              
+              <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+                
+                <!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Mass&nbsp;(10<span class="xnth">&#50;&#49;</span>&nbsp;tons)</span></th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter&nbsp;(mi.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">5.37 &times; 10<span class="xnth">&#50;&#49;</span>&nbsp;tons</td>
+                    <td id="planets">7521 mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Density &nbsp;(lbs/ft&sup3;)</th>
+                    <th scope="row" id="planets" style="text-align:center">Gravity &nbsp;(ft/s&sup2;)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">327 lbs/ft&sup3;</td>
+                    <td id="planets">29.1 ft/s&sup2;</td>
+                  </tr>
+                </tbody>
+                
+            
+                <!--Modal Table Row 4 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Length of Day &nbsp;(hrs.)</th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Dist. from Sun &nbsp;(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">2802 hrs.</td>
+                    <td id="planets">67.2 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+
+                
+                <!-- Modal Table Row 5 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Perihelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Aphelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">66.8 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                    <td id="planets">67.7 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 6 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period &nbsp;(days)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Velocity&nbsp;(MPS)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">224.7 days</td>
+                    <td id="planets">21.8 MPS</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 7 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Inclination(degrees)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Eccentricity</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">3.4 degrees</td>
+                    <td id="planets">0.007</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 8 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Axial Tilt &nbsp;(deg.)</th>
+                    <th scope="row" id="planets" style="text-align:center">Mean Temperature &nbsp;(&deg;F)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">177.4 deg.</td>
+                    <td id="planets">867&deg;F</td>
+                  </tr>
+                </tbody>  
+                  <!-- Modal Table Row 9 -->
+                  
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Surface Pressure &nbsp;(Atm)</th>
+                    <th scope="row" id="planets" style="text-align:center">Number of Moons</th>
+                  </tr>
+                </thead>
+                <tbody  id="planets">
+                  <tr  id="planets">
+                    <td  id="planets">91 Atm</td>
+                    <td  id="planets">0</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 10 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Ring System?</th>
+                    <th scope="row" id="planets" style="text-align:center">Global Magnetic Field?</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">NO</td>
+                    <td id="planets">NO</td>
+                  </tr>
+                </tbody>
+<thead id="planets">
+                  <tr id="planets">
+                  <th id="planets">&nbsp;</th>
+                  <th id="planets">&nbsp;</th>
+                  </tr>
+                  </thead>
+                  <tbody id="planets">
+                  </tbody>
+                 
+               <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center; font-size:18px; font-weight:bold; font-family:'Kozuka Mincho Pro H'">Atmospheric Composition=</th>
+
+                    <th id="elements">
+                    96&#37; (CO<sub>2</sub>)&nbsp;&nbsp;
+                    4&#37; (N) 
+                    </th>
+                   </tr>
+                   </thead>
+              </table>
+           <!-- End of Modal Table --> 
+             </div> 
+            
+            <!-- End of Modal Body --> 
+
+
+            <div class="modal-footer" id="planets">
+            <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+<!-- END OF VENUS -->
+  
+<!-- BEGINNING EARTH -->
+<div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+      <button type="button" id="myBtn6" style="background:transparent"><img src="images/Planets/earth-transparent.png" alt="Earth"/></button>
+      <div class="desc" id="planets">EARTH</div>
+      
+      <!-- THE MODAL -->
+      <div id="myModal6" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">EARTH</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            <img src="images/Planets/earth-globe-flickr.jpg" id="modal" alt="Earth"/> 
+<!-- Fact/Data Sheet Modal Table -->
+              
+              <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+                
+                <!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Mass&nbsp;(10<span class="xnth">&#50;&#49;</span>&nbsp;tons)</span></th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter&nbsp;(mi.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">6.58 &times; 10<span class="xnth">&#50;&#49;</span>&nbsp;tons</td>
+                    <td id="planets">7926 mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Density &nbsp;(lbs/ft&sup3;)</th>
+                    <th scope="row" id="planets" style="text-align:center">Gravity &nbsp;(ft/s&sup2;)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">344 lbs/ft&sup3;</td>
+                    <td id="planets">32.1 ft/s&sup2;</td>
+                  </tr>
+                </tbody>
+                
+               
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Length of Day &nbsp;(hrs.)</th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Dist. from Sun &nbsp;(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">24.0 hrs.</td>
+                    <td id="planets">93.0 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 5 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Perihelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Aphelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">91.4 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                    <td id="planets">94.5 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 6 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period &nbsp;(days)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Velocity&nbsp;(MPS)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">365.2 days</td>
+                    <td id="planets">18.5 MPS</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 7 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Inclination(degrees)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Eccentricity</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">0.0 degrees</td>
+                    <td id="planets">0.017</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 8 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Axial Tilt &nbsp;(deg.)</th>
+                    <th scope="row" id="planets" style="text-align:center">Mean Temperature &nbsp;(&deg;F)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">23.4 deg.</td>
+                    <td id="planets">59&deg;F</td>
+                  </tr>
+                </tbody>  
+                  <!-- Modal Table Row 9 -->
+                  
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Surface Pressure &nbsp;(Atm)</th>
+                    <th scope="row" id="planets" style="text-align:center">Number of Moons</th>
+                  </tr>
+                </thead>
+                <tbody  id="planets">
+                  <tr  id="planets">
+                    <td  id="planets">1 Atm</td>
+                    <td  id="planets"><a href="sunmoon.html" target="_blank">1</a></td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 10 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Ring System?</th>
+                    <th scope="row" id="planets" style="text-align:center">Global Magnetic Field?</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">NO</td>
+                    <td id="planets">YES</td>
+                  </tr>
+                </tbody>
+<thead id="planets">
+                  <tr id="planets">
+                  <th scope="row" id="planets">&nbsp;</th>
+                  <th scope="row" id="planets">&nbsp;</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                 
+               <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center; font-size:18px; font-weight:bold; font-family:'Kozuka Mincho Pro H'">Atmospheric Composition=<br>&nbsp;</th>
+                    
+                    
+                    <th id="elements">
+                    
+                    78&#37; (N)&nbsp;
+                    21&#37; (O)&nbsp;
+                    1&#37; (Ar)<br>
+                    &#60; 1&#37; (Other)
+                   
+                    </th>
+                   </tr>
+                   </thead>
+              </table>
+           <!-- End of Modal Table --> 
+             </div> 
+            
+            <!-- End of Modal Body --> 
+
+
+            <div class="modal-footer" id="planets">
+            <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+<!-- END OF EARTH -->
+
+
+   
+<!-- BEGIN MARS  -->
+<div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+      <button type="button" id="myBtn5" style="background:transparent"><img src="images/Planets/mars-transparent.png" alt="MARS NO BACKGROUND"/></button>
+      <div class="desc" id="planets">MARS</div>
+      
+      <!-- THE MODAL -->
+      <div id="myModal5" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">MARS</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            <img src="images/Planets/marsglobe3_viking_big.jpg" id="modal" alt="MARS"/> 
+<!-- Fact/Data Sheet Modal Table -->
+              
+              <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+                
+                <!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Mass&nbsp;(10<span class="xnth">&#50;&#49;</span>&nbsp;tons)</span></th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter&nbsp;(mi.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">0.708 &times; 10<span class="xnth">&#50;&#49;</span>&nbsp;tons</td>
+                    <td id="planets">4221 mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Density &nbsp;(lbs/ft&sup3;)</th>
+                    <th scope="row" id="planets" style="text-align:center">Gravity &nbsp;(ft/s&sup2;)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">246 lbs/ft&sup3;</td>
+                    <td id="planets">12.1 ft/s&sup2;</td>
+                  </tr>
+                </tbody>
+                
+              
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Length of Day &nbsp;(hrs.)</th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Dist. from Sun &nbsp;(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">24.7 hrs.</td>
+                    <td id="planets">141.6 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 5 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Perihelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Aphelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">128.4 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                    <td id="planets">154.9 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 6 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period &nbsp;(days)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Velocity&nbsp;(MPS)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">687.0 days</td>
+                    <td id="planets">15.0 MPS</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 7 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Inclination(degrees)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Eccentricity</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1.9 degrees</td>
+                    <td id="planets">0.094</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 8 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Axial Tilt &nbsp;(deg.)</th>
+                    <th scope="row" id="planets" style="text-align:center">Mean Temperature &nbsp;(&deg;F)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">25.2 deg.</td>
+                    <td id="planets">-85&deg;F</td>
+                  </tr>
+                </tbody>  
+                  <!-- Modal Table Row 9 -->
+                  
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Surface Pressure &nbsp;(Atm)</th>
+                    <th scope="row" id="planets" style="text-align:center">Number of Moons</th>
+                  </tr>
+                </thead>
+                <tbody  id="planets">
+                  <tr  id="planets">
+                    <td  id="planets">0.01 Atm</td>
+                    <td  id="planets"><a href="sunmoon.html" target="_blank">2</a></td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 10 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Ring System?</th>
+                    <th scope="row" id="planets" style="text-align:center">Global Magnetic Field?</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">NO</td>
+                    <td id="planets">NO</td>
+                  </tr>
+                </tbody>
+<thead id="planets">
+                  <tr id="planets">
+                  <th scope="row" id="planets">&nbsp;</th>
+                  <th scope="row" id="planets">&nbsp;</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                 
+               <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center; font-size:18px; font-weight:bold; font-family:'Kozuka Mincho Pro H'">Atmospheric Composition=<br>&nbsp;</th>
+                    
+                    
+                    <th id="elements">
+
+                    95&#37; (CO<sub>2</sub>)&nbsp;
+                    2.7&#37; (N)&nbsp;
+                    1.6&#37; (Ar)<br>
+                    0.7&#37; (Other)
+                    </th>
+                   </tr>
+                   </thead>
+              </table>
+           <!-- End of Modal Table --> 
+             </div> 
+            
+            <!-- End of Modal Body --> 
+
+            <div class="modal-footer" id="planets">
+            <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+
+<!-- END OF MARS -->
+
+<div class="clearfix"></div>
+
+<section id="partfull2" style="background-color:transparent">
+<!-- BEGIN JUPITER -->
+<div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+      <button type="button" id="myBtn4" style="background:transparent"><img src="images/Planets/jupiter-transparent.png" alt="Jupiter"/></button>
+      <div class="desc" id="planets">JUPITER</div>
+      
+      <!-- THE MODAL -->
+      <div id="myModal4" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">JUPITER</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            <img src="images/Planets/jupiter-uranus-eubanks-photo-100923-02.jpg" id="modal" alt="Jupiter"/> 
+<!-- Fact/Data Sheet Modal Table -->
+              
+              <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+                
+                <!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Mass&nbsp;(10<span class="xnth">&#50;&#49;</span>&nbsp;tons)</span></th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter&nbsp;(mi.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">2093 &times; 10<span class="xnth">&#50;&#49;</span>&nbsp;tons</td>
+                    <td id="planets">88,846 mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Density &nbsp;(lbs/ft&sup3;)</th>
+                    <th scope="row" id="planets" style="text-align:center">Gravity &nbsp;(ft/s&sup2;)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">83 lbs/ft&sup3;</td>
+                    <td id="planets">75.9 ft/s&sup2;</td>
+                  </tr>
+                </tbody>
+         
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Length of Day &nbsp;(hrs.)</th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Dist. from Sun &nbsp;(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">9.9 hrs.</td>
+                    <td id="planets">483.8 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 5 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Perihelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Aphelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">460.1 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                    <td id="planets">507.4 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 6 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period &nbsp;(days)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Velocity&nbsp;(MPS)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">4331 days</td>
+                    <td id="planets">8.1 MPS</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 7 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Inclination(degrees)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Eccentricity</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1.3 degrees</td>
+                    <td id="planets">0.049</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 8 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Axial Tilt &nbsp;(deg.)</th>
+                    <th scope="row" id="planets" style="text-align:center">Mean Temperature &nbsp;(&deg;F)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">3.1 deg.</td>
+                    <td id="planets">-166&deg;F</td>
+                  </tr>
+                </tbody>  
+                  <!-- Modal Table Row 9 -->
+                  
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Surface Pressure &nbsp;(Atm)</th>
+                    <th scope="row" id="planets" style="text-align:center">Number of Moons</th>
+                  </tr>
+                </thead>
+                <tbody  id="planets">
+                  <tr  id="planets">
+                    <td  id="planets">Unknown</td>
+                    <td  id="planets"><a href="sunmoon.html" target="_blank">67</a></td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 10 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Ring System?</th>
+                    <th scope="row" id="planets" style="text-align:center">Global Magnetic Field?</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">YES</td>
+                    <td id="planets">YES</td>
+                  </tr>
+                </tbody>
+<thead id="planets">
+                  <tr id="planets">
+                  <th scope="row" id="planets">&nbsp;</th>
+                  <th scope="row" id="planets">&nbsp;</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                 
+               <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center; font-size:18px; font-weight:bold; font-family:'Kozuka Mincho Pro H'">Atmospheric Composition=&nbsp;</th>
+                    
+                    
+                    <th id="elements">
+                    
+                    89.8&#37; (H)&nbsp;
+                    10.2&#37; (He)
+                   
+                    </th>
+                   </tr>
+                   </thead>
+              </table>
+           <!-- End of Modal Table --> 
+             </div> 
+            
+            <!-- End of Modal Body --> 
+
+            <div class="modal-footer" id="planets">
+            <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+<!-- END JUPITER -->
+
+
+<!-- BEGIN SATURN -->
+<div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+      <button type="button" id="myBtn3" style="background:transparent"><img src="images/Planets/saturn-transparent.png" alt="image of saturn with a transparent background"/></button>
+      <div class="desc" id="planets">SATURN</div>
+      
+      <!-- THE MODAL -->
+      <div id="myModal3" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">SATURN</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            <img src="images/Planets/SP_091102_saturn-VS.jpg" id="modal" alt="Saturn"/> 
+<!-- Fact/Data Sheet Modal Table -->
+              
+              <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+                
+                <!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Mass&nbsp;(10<span class="xnth">&#50;&#49;</span>&nbsp;tons)</span></th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter&nbsp;(mi.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">627 &times; 10<span class="xnth">&#50;&#49;</span>&nbsp;tons</td>
+                    <td id="planets">74,897 mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Density &nbsp;(lbs/ft&sup3;)</th>
+                    <th scope="row" id="planets" style="text-align:center">Gravity &nbsp;(ft/s&sup2;)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">43 lbs/ft&sup3;</td>
+                    <td id="planets">29.4 ft/s&sup2;</td>
+                  </tr>
+                </tbody>
+                
+             
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Length of Day &nbsp;(hrs.)</th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Dist. from Sun &nbsp;(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">10.7 hrs.</td>
+                    <td id="planets">890.8 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 5 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Perihelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Aphelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">840.4 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                    <td id="planets">941.1 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 6 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period &nbsp;(days)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Velocity&nbsp;(MPS)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">10,747 days</td>
+                    <td id="planets">6.0 MPS</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 7 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Inclination(degrees)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Eccentricity</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">2.5 degrees</td>
+                    <td id="planets">0.057</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 8 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Axial Tilt &nbsp;(deg.)</th>
+                    <th scope="row" id="planets" style="text-align:center">Mean Temperature &nbsp;(&deg;F)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">26.7 deg.</td>
+                    <td id="planets">-220&deg;F</td>
+                  </tr>
+                </tbody>  
+                  <!-- Modal Table Row 9 -->
+                  
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Surface Pressure &nbsp;(Atm)</th>
+                    <th scope="row" id="planets" style="text-align:center">Number of Moons</th>
+                  </tr>
+                </thead>
+                <tbody  id="planets">
+                  <tr  id="planets">
+                    <td  id="planets">Unknown</td>
+                    <td  id="planets"><a href="sunmoon.html" target="_blank">62</a></td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 10 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Ring System?</th>
+                    <th scope="row" id="planets" style="text-align:center">Global Magnetic Field?</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">YES</td>
+                    <td id="planets">YES</td>
+                  </tr>
+                </tbody>
+<thead id="planets">
+                  <tr id="planets">
+                  <th scope="row" id="planets">&nbsp;</th>
+                  <th scope="row" id="planets">&nbsp;</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                 
+               <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center; font-size:18px; font-weight:bold; font-family:'Kozuka Mincho Pro H'">Atmospheric Composition=<br>&nbsp;</th>
+                    
+                    
+                    <th id="elements">
+                    
+                    96.3&#37; (H)&nbsp;
+                    3.2&#37; (He)<br>
+                    0.5&#37; (Other)
+                   
+                    </th>
+                   </tr>
+                   </thead>
+              </table>
+           <!-- End of Modal Table --> 
+             </div> 
+            
+            <!-- End of Modal Body --> 
+
+
+            <div class="modal-footer" id="planets">
+            <a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+<!-- END OF SATURN -->  
+
+<!-- BEGIN URANUS -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+      <button type="button" id="myBtn2" style="background:transparent"><img src="images/Planets/uranus-transparent.png" alt="image of uranus with a transparent background" /></button>
+      <div class="desc" id="planets">URANUS</div>
+      
+      <!-- THE MODAL -->
+      <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">URANUS</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            <img src="images/Planets/uranus.jpg" id="modal" alt="Rare image of Uranus showing its rings."/> 
+<!-- Fact/Data Sheet Modal Table -->
+              
+              <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+                
+                <!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Mass&nbsp;(10<span class="xnth">&#50;&#49;</span>&nbsp;tons)</span></th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter&nbsp;(mi.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">95.7 &times; 10<span class="xnth">&#50;&#49;</span>&nbsp;tons</td>
+                    <td id="planets">31,763 mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Density &nbsp;(lbs/ft&sup3;)</th>
+                    <th scope="row" id="planets" style="text-align:center">Gravity &nbsp;(ft/s&sup2;)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">79 lbs/ft&sup3;</td>
+                    <td id="planets">28.5 ft/s&sup2;</td>
+                  </tr>
+                </tbody>
+                
+                
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Length of Day &nbsp;(hrs.)</th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Dist. from Sun &nbsp;(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">17.2 hrs.</td>
+                    <td id="planets">1784.8 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 5 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Perihelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Aphelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1703.4 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                    <td id="planets">1866.4 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 6 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period &nbsp;(days)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Velocity&nbsp;(MPS)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">30,589 days</td>
+                    <td id="planets">4.2 MPS</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 7 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Inclination(degrees)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Eccentricity</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">0.8 degrees</td>
+                    <td id="planets">0.046</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 8 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Axial Tilt &nbsp;(deg.)</th>
+                    <th scope="row" id="planets" style="text-align:center">Mean Temperature &nbsp;(&deg;F)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">97.8 deg.</td>
+                    <td id="planets">-320&deg;F</td>
+                  </tr>
+                </tbody>  
+                  <!-- Modal Table Row 9 -->
+                  
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Surface Pressure &nbsp;(Atm)</th>
+                    <th scope="row" id="planets" style="text-align:center">Number of Moons</th>
+                  </tr>
+                </thead>
+                <tbody  id="planets">
+                  <tr  id="planets">
+                    <td  id="planets">Unknown</td>
+                    <td  id="planets"><a href="sunmoon.html" target="_blank">27</a></td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 10 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Ring System?</th>
+                    <th scope="row" id="planets" style="text-align:center">Global Magnetic Field?</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">YES</td>
+                    <td id="planets">YES</td>
+                  </tr>
+                </tbody>
+<thead id="planets">
+                  <tr id="planets">
+                  <th scope="row" id="planets">&nbsp;</th>
+                  <th scope="row" id="planets">&nbsp;</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                 
+               <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center; font-size:18px; font-weight:bold; font-family:'Kozuka Mincho Pro H'">Atmospheric Composition=&nbsp;</th>
+                    
+                    
+                    <th id="elements">
+                    
+                    82.5&#37; (H)&nbsp;
+                    15.2&#37; (He)
+
+                    </th>
+                   </tr>
+                   </thead>
+              </table>
+           <!-- End of Modal Table --> 
+             </div> 
+            
+            <!-- End of Modal Body --> 
+
+
+            <div class="modal-footer" id="planets"><a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END OF URANUS -->  
+ 
+<!-- BEGIN NEPTUNE -->
+  <div class="responsive" id="planets">
+    <div class="gallery" id="planets">
+      <button type="button" id="myBtn9" style="background:transparent"><img src="images/Planets/neptune-transparent.png" alt="image of neptune with a transparent background"/></button>
+      <div class="desc" id="planets">NEPTUNE</div>
+      
+      <!-- THE MODAL -->
+      <div id="myModal9" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="planets"> 
+          
+          <!-- Modal content-->
+          <div class="modal-content" id="planets">
+            <div class="modal-header" id="planets">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">NEPTUNE</h4>
+            </div>
+            <div class="modal-body" id="planets">
+            <img src="images/Planets/neptune-possible-comet-impact-100722-02.jpg" id="modal" alt="A photo of a possible comet impact with Neptune"/> 
+<!-- Fact/Data Sheet Modal Table -->
+              
+              <table border="2" id="planets" cellspacing="5px" cellpadding="5px">
+                
+                <!-- Modal Table Row 1 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Mass&nbsp;(10<span class="xnth">&#50;&#49;</span>&nbsp;tons)</span></th>
+                    <th scope="row" id="planets" style="text-align:center">Diameter&nbsp;(mi.)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">113 &times; 10<span class="xnth">&#50;&#49;</span>&nbsp;tons</td>
+                    <td id="planets">30,775 mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 2 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Density &nbsp;(lbs/ft&sup3;)</th>
+                    <th scope="row" id="planets" style="text-align:center">Gravity &nbsp;(ft/s&sup2;)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">102 lbs/ft&sup3;</td>
+                    <td id="planets">36.0 ft/s&sup2;</td>
+                  </tr>
+                </tbody>
+                
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Length of Day &nbsp;(hrs.)</th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Dist. from Sun &nbsp;(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">16.1 hrs.</td>
+                    <td id="planets">2793.1 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 5 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center"> <span>Perihelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                    <th scope="row" id="planets" style="text-align:center"> <span>Aphelion(10<span class="xnth">&#54;</span>&nbsp;mi.)</span></th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">2761.6 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                    <td id="planets">2824.5 &times; 10<span class="xnth">&#54;</span>&nbsp;mi.</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 6 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Period &nbsp;(days)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Velocity&nbsp;(MPS)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">59,800 days</td>
+                    <td id="planets">3.4 MPS</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 7 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Orbital Inclination(degrees)</th>
+                    <th scope="row" id="planets" style="text-align:center">Orbital Eccentricity</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">1.8 degrees</td>
+                    <td id="planets">0.011</td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 8 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Axial Tilt &nbsp;(deg.)</th>
+                    <th scope="row" id="planets" style="text-align:center">Mean Temperature &nbsp;(&deg;F)</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">28.3 deg.</td>
+                    <td id="planets">-330&deg;F</td>
+                  </tr>
+                </tbody>  
+                  <!-- Modal Table Row 9 -->
+                  
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Surface Pressure &nbsp;(Atm)</th>
+                    <th scope="row" id="planets" style="text-align:center">Number of Moons</th>
+                  </tr>
+                </thead>
+                <tbody  id="planets">
+                  <tr  id="planets">
+                    <td  id="planets">Unknown</td>
+                    <td  id="planets"><a href="sunmoon.html" target="_blank">14</a></td>
+                  </tr>
+                </tbody>
+                
+                <!-- Modal Table Row 10 -->
+                
+                <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center">Ring System?</th>
+                    <th scope="row" id="planets" style="text-align:center">Global Magnetic Field?</th>
+                  </tr>
+                </thead>
+                <tbody id="planets">
+                  <tr id="planets">
+                    <td id="planets">YES</td>
+                    <td id="planets">YES</td>
+                  </tr>
+                  </tbody>
+                  <thead id="planets">
+                  <tr id="planets">
+                  <th scope="row" id="planets">&nbsp;</th>
+                  <th scope="row" id="planets">&nbsp;</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                 
+               <thead id="planets">
+                  <tr id="planets">
+                    <th scope="row" id="planets" style="text-align:center; font-size:18px; font-weight:bold; font-family:'Kozuka Mincho Pro H'">Atmospheric Composition=&nbsp;</th>
+                    
+                    
+                    <th id="elements">
+                    
+                    80&#37; (H)&nbsp;
+                    19&#37; (He)&nbsp;
+                    1&#37; (CH<sub>4</sub>)
+                   
+                    </th>
+                   </tr>
+                   </thead>
+              </table>
+           <!-- End of Modal Table --> 
+             </div> 
+            
+            <!-- End of Modal Body --> 
+
+            <div class="modal-footer" id="planets"><a href="http://www.theplanetstoday.com/" target="_blank">
+              <h5 align="center">Visit 'The Planets Today' & Discover Even More</h5>
+              </a>
+           
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END NEPTUNE -->  
+<script src="js/planetmodal.js" type="text/javascript"></script>
+</section>
+
+<div class="clearfix"></div>
+</section>
+<p class="return"><a href="#top">Back To The Top</a></p>
+<footer>
+
+<div class="cont">
+
+  <ul class="contact">
+  
+  <li id="phone" style="text-align:left; color:white">
+      <p><i style="color:rgb(0,153,204)" class="fa fa-phone fa-3x"></i></p>
+      <p style="color:rgb(0,153,204)"><strong style="color:white">Phone:</strong></br>(949)690-1553</p>
+    </li> 
+    
+  <li id="mailing" style="text-align:left; color:white; margin-top:2px">
+      <p style="color:rgb(0,153,204)"><strong style="color:white; font-size:28px">The Amateur Astronomer</strong><br/>
+	  	<strong>Last Updated:<br/>
+		</strong><!-- #BeginDate format:Am1a -->May 25, 2017 2:12 PM<!-- #EndDate --></p>
+	</li>
+
+    <li id="emailme" style="text-align:left; color:white">
+      <p><i style="color:rgb(0,153,204)" class="fa fa-envelope fa-3x"></i></p>
+      <p><strong>E-mail:</strong></br><a style="color:rgb(0,153,204)" href="mailto:jsobie03@baker.edu">jsobie03@baker.edu</a></p>
+    </li>
+
+  </ul>
+</div>
+
+</footer>
+</body>
+</html>
