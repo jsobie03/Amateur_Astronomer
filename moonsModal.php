@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Planets</title>
   <meta charset="utf-8">
@@ -34,7 +34,7 @@ h1.planetLink {
 /* Clearfix (clear floats) */
 .row::after {
     content: "";
-    clear: right;
+    clear: both;
     display: table;
 }
 
@@ -74,25 +74,23 @@ background-color:transparent;
 
 </head>
 <body>
-<div id="page">
 <div class="container">
   <div class="row">
   <div class="column">
-    <button id="planet" data-toggle="modal" data-target="#myModal"><img src="images/planets/mercury-transparent.png" style="width:310px; height:auto;"/></button>
+    <button id="planet" data-toggle="modal" data-target="#myModal"><img src="images/planets/mercury-transparent.png" style="width:320px; height:auto;"/></button>
   </div>
   <div class="column">
-   <button id="planet" data-toggle="modal" data-target="#myModal2"><img src="images/planets/venus-transparent.png" style="width:310px; height:auto;"/></button>
+   <button id="planet" data-toggle="modal" data-target="#myModal2"><img src="images/planets/venus-transparent.png" style="width:320px; height:auto;"/></button>
   </div>
   <div class="column">
-    <button id="planet" data-toggle="modal" data-target="#myModal3"><img src="images/planets/earth-transparent.png" style="width:310px; height:auto;"/></button>
+    <button id="planet" data-toggle="modal" data-target="#myModal3"><img src="images/planets/earth-transparent.png" style="width:320px; height:auto;"/></button>
   </div>
   </div>
+  <div class="row">
   <div class="column">
-    <button id="planet" data-toggle="modal" data-target="#myModal4"><img src="images/planets/mars-transparent.png" style="width:310px; height:auto;"/></button>
+    <button id="planet" data-toggle="modal" data-target="#myModal4"><img src="images/planets/mars-transparent.png" style="width:320px; height:auto;"/></button>
   </div>
-  </div>
-</div>
-<div class="row">
+
   <div class="column">
    <button id="planet" data-toggle="modal" data-target="#myModal5"><img src="images/planets/jupiter-transparent.png" style="width:320px; height:auto;"/></button>
   </div>
@@ -699,5 +697,3 @@ background-color:transparent;
     </div>
   </div>
 </div>
-
-</body>

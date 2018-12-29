@@ -28,7 +28,7 @@
       <ul>
         <li><a href="3dorbit.php" target="_blank"><img src="images/3D-Solar-System.jpeg" alt="3D Model of the Solar System"></a></li>
         <li><a href="planets.php" target="_blank"><img src="images/planetsAndDwarfs.jpg" alt="All the planets and dwarf planets in our Solar System"></a></li>
-        <li><a href="underconstruction.php" target="_blank"><img src="images/project-image3.jpg" alt=""></a></li>
+        <li><a href="links.php" target="_blank"><img src="images/links/nasaSM.png" width="238" height="auto" alt="NASA Logo for Links Page"></a></li>
         <li><a href="underconstruction.php" target="_blank"><img src="images/project-image4.jpg" alt=""></a></li>
       </ul>
     </div>

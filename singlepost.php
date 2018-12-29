@@ -7,6 +7,13 @@
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/mobile.css">
 <script src="js/mobile.js" type="text/javascript"></script>
+
+<style>
+h3 {
+	color:white;
+	text-align:right;	
+}
+</style>
 </head>
 
 <body>
@@ -42,18 +49,18 @@
         <ul>
           <li>
             <h1>FEATURED POSTS</h1>
-            <a href="blog.html"><img src="images/moon-satellite.jpg" alt=""></a>
-            <h2>SOYUZ TMA-M</h2>
-            <span>FEBRUARY 6, 2023</span></li>
+            <a href="singlepost3.php"><img src="images/planets/BLOG/sundies.jpg" alt=""></a>
+            <h2>WHAT WILL HAPPEN WHEN OUR SUN DIES?</h2>
+            <span>MAY 7, 2018</span></li>
           <li>
             <h1>RECENT POSTS</h1>
             <ul>
-              <li><a href="blog.html"><img src="images/alien-life.jpg" alt=""></a>
-                <h2>ALIEN LIFE</h2>
-                <span>FEBRUARY 3, 2023</span></li>
-              <li><a href="blog.html"><img src="images/galaxy.jpg" alt=""></a>
-                <h2>THE GALAXY</h2>
-                <span>FEBRUARY 1, 2023</span></li>
+              <li><a href="singlepost4.php"><img src="images/planets/BLOG/couldrecents.jpg" alt=""></a>
+                <h3>COULD RECENT SUPERNOVAE BE RESPONSIBLE FOR MASS EXTINCTIONS?</h3>
+                <span>MAY 18, 2018</span></li>
+              <li><a href="singlepost5.php"><img src="images/planets/BLOG/couldamultiv-700x432.jpg" alt=""></a>
+                <h3>IF THERE IS A MULTIVERSE, CAN THERE BE LIFE THERE TOO?</h3>
+                <span>MAY 15, 2018</span></li>
             </ul>
           </li>
         </ul>

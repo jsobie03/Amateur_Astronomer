@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amateur Astronomer - Planets</title>
-<link rel="stylesheet" href="css/style.css" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/mobile.css">
-<script src="js/mobile.js" type="text/javascript"></script>
-
-</head>
-
 <body>
-<div id="page">
+
 <?php include 'header.php'?>
+<div id="page">
 <?php include 'planetModal.php'?>
-<?php include 'footer.php'?>
 </div>
-</body>
-</html>
+<h1 class="planetLink">Want to See More? Go check out <a href="moons.php">Moons</a> AND/OR <a href="dwarfs.php">Dwarf Planets</a></h1>
+<?php include("footer.php")?>

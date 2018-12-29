@@ -1,4 +1,13 @@
-/* Website template by freewebsitetemplates.com */
+/*-------------------------------------------FONTS---------------------------------------------*/
+@font-face {
+	font-family: 'audiowide-regular-webfont';
+	src: url('../fonts/audiowide-regular-webfont.eot');
+	src: url('../fonts/audiowide-regular-webfont.woff') format('woff'), url('../fonts/audiowide-regular-webfont.ttf') format('truetype'), url('../fonts/audiowide-regular-webfont.svg') format('svg');
+}
+/*-----------------------------------MAIN BODY STYLES------------------------------------------*/
+* {
+	color:rgba(255,255,255,1);
+}
 
 body {
 	margin: 0;
@@ -6,13 +15,14 @@ body {
 	position: relative;
 	width: auto;
 }
+
 body #page {
 	background:url(../images/bg3-home.jpg) no-repeat scroll top #000000; 
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
 	width: auto;
-	z-index: 3;
+	z-index: 1;
 }
 a {
 	text-decoration: none;
@@ -24,12 +34,7 @@ a:active {
 img {
 	border: none;
 }
-/*-------------------------------------------FONTS---------------------------------------------*/
-@font-face {
-	font-family: 'audiowide-regular-webfont';
-	src: url('../fonts/audiowide-regular-webfont.eot');
-	src: url('../fonts/audiowide-regular-webfont.woff') format('woff'), url('../fonts/audiowide-regular-webfont.ttf') format('truetype'), url('../fonts/audiowide-regular-webfont.svg') format('svg');
-}
+
 /*----------------------------------------header-styles---------------------------------------*/
 #header {
 	background: url(../images/bg-transparent1.png) repeat;
@@ -801,7 +806,7 @@ img {
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
-	width: 520px;
+	width: 600px;
 }
 #body .header div ul li div h1 {
 	color: #A3A3A3;
@@ -813,7 +818,7 @@ img {
 	padding: 0;
 	text-align: left;
 	text-transform: uppercase;
-	width: 520px;
+	width: 600px;
 }
 #body .header div ul li div p {
 	color: #FFFFFF;
@@ -824,7 +829,7 @@ img {
 	margin: 0 0 41px;
 	padding: 0;
 	text-align: left;
-	width: 520px;
+	width: 600px;
 }
 #body .header div ul li div p a {
 	color: #FFFFFF;
@@ -910,14 +915,14 @@ img {
 	float: left;
 	margin: 0 40px 0 10px;
 	padding: 0;
-	width: 560px;
+	width: 600px;
 }
 #body .header div .article ul {
 	display: inline-block;
 	list-style: none outside none;
 	margin: 0;
 	padding: 3px 0 0;
-	width: 560px;
+	width: 520px;
 }
 #body .header div .article ul li:first-child {
 	border: none;
@@ -935,7 +940,7 @@ img {
 	height: 241px;
 	margin: 0 0 29px;
 	padding: 0;
-	width: 560px;
+	width: 520px;
 }
 #body .header div .article ul li a img {
 	cursor: pointer;
@@ -1026,14 +1031,14 @@ img {
 	float: left;
 	margin: 0;
 	padding: 0;
-	width: 340px;
+	width: 280px;
 }
 #body .header div .sidebar ul {
 	display: inline-block;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	width: 340px;
+	width: 280px;
 }
 #body .header div .sidebar ul li:first-child {
 	border: medium none;
@@ -1056,7 +1061,7 @@ img {
 	padding: 0;
 	text-align: left;
 	text-transform: uppercase;
-	width: 340px;
+	width: 280px;
 }
 #body .header div .sidebar ul li a {
 	display: block;
@@ -1109,7 +1114,7 @@ img {
 	list-style: none outside none;
 	margin: 0;
 	padding: 12px 0 0;
-	width: 340px;
+	width: 280px;
 }
 #body .header div .sidebar ul li ul li:first-child {
 	padding: 0;
@@ -1153,7 +1158,7 @@ img {
 	padding: 0;
 	text-align: left;
 	text-transform: uppercase;
-	width: 260px;
+	width: 250px;
 }
 #body .header div .sidebar ul li ul li span {
 	color: #ffffff;
@@ -1208,6 +1213,7 @@ img {
 	margin: 0 0 24px;
 	padding: 0;
 	text-align: left;
+	text-indent:2.0em;
 	width: auto;
 }
 #body .header div .article p a {
